@@ -45,7 +45,7 @@ export function ProfileSection() {
                 LinkedIn
               </Button>
             </Link>
-            <Link href="/your-resume.pdf" target="_blank">
+            <Link href="/Leach_Cedar_Rose_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 className="text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
