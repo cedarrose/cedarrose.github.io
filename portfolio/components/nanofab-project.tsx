@@ -51,7 +51,7 @@ export function NanofabProject({ project }: NanofabProjectProps) {
                     width={0} // Dynamic width
                     height={0} // Dynamic height
                     sizes="100vw" // Full width of the container
-                    className="object-contain h-16 md:h-16 lg:h-24 w-auto"
+                    className="object-contain h-16 md:h-16 lg:h-20 w-auto"
                 />
                 ))}
             </div>
