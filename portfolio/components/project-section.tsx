@@ -10,7 +10,7 @@ export function ProjectSection({
   children: React.ReactNode
 }) {
   return (
-    <section className="mb-16 px-4 text-base font-normal tracking-normal text-left">
+    <section className="mb-16 col-span-6 md:col-span-6 px-4 text-base font-normal tracking-normal text-left">
       {children}
     </section>
   )

@@ -50,7 +50,7 @@ export default function Page() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         style={{ opacity, y }}
-        className="container mx-auto max-w-[400px] px-24 py-16"
+        className="container col-span-6 md:col-span-6 mx-auto max-w-[400px] px-24 py-16"
       >
           <h2 className="text-lg mt-8 text-[#5e5e5e] leading-relaxed max-w-xl ml-4 mb-2">
           What I've Been Working On<span className="inline-block w-[30px]">{dots}</span>
