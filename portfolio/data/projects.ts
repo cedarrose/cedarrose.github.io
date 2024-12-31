@@ -17,11 +17,11 @@ export const nanofabProject: NanofabProject = {
   ],
   images: [
     {
-      src: '/nanofab/cleanroom.jepg',
+      src: '/nanofab/cleanroom.jpeg',
       caption: 'A Photolithography section of the John O\'brien nanofabrication cleanroom.'
     },
     {
-      src: '/nanofab/spinner.jepg',
+      src: '/nanofab/spinner.jpeg',
       caption: 'Spinning photoresist evenly on my wafer as part of the lithography process.'
     },
     {
@@ -29,7 +29,7 @@ export const nanofabProject: NanofabProject = {
       caption: 'Wafer full of nerual probes that I fabricated through photolithography, deposition, etching, & liftoff'
     },
     {
-      src: '/nanofab/deposition.jepg',
+      src: '/nanofab/deposition.jpeg',
       caption: 'Retrieving wafers after depositing titanium via the electron-beam physical vapor deposition'
     },
     {
@@ -238,7 +238,7 @@ export const smartenderProject: MakerProject = {
       caption: 'SmarTender View 2'
     },
     {
-      src: '/smartender/gears.jepg',
+      src: '/smartender/gears.jpeg',
       caption: 'Gears for lifting mechanism'
     }
   ]
@@ -256,7 +256,7 @@ export const bcdProject: MakerProject = {
   ],
   images: [
     {
-      src: '/bcd/circuit.jepg',
+      src: '/bcd/circuit.jpeg',
       caption: 'BCI hardware setup'
     },
     {
