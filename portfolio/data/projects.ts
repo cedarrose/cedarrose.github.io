@@ -17,30 +17,34 @@ export const nanofabProject: NanofabProject = {
   ],
   images: [
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: ''
+      src: '/nanofab/cleanroom.jpg',
+      caption: 'A Photolithography section of the John O\'brien nanofabrication cleanroom.'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: ''
+      src: '/nanofab/spinner.jpg',
+      caption: 'Spinning photoresist evenly on my wafer as part of the lithography process.'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: ''
+      src: '/nanofab/neuralprobe.jpeg',
+      caption: 'Wafer full of nerual probes that I fabricated through photolithography, deposition, etching, & liftoff'
+    },
+    {
+      src: '/nanofab/deposition.jpg',
+      caption: 'Retrieving wafers after depositing titanium via the electron-beam physical vapor deposition'
+    },
+    {
+      src: '/nanofab/scribe.jpeg',
+      caption: 'Scibe tool used to cleave wafer - I made a Standard Operating Procedure Tutorial (SOP) for this tool'
     }
   ],
   logos: [
     {
-      src: '/placeholder.svg?height=50&width=200',
-      alt: 'DREAMS Logo',
-      width: 200,
-      height: 50
+      src: '/nanofab/cadreams.webp',
+      alt: 'DREAMS Logo'
     },
     {
-      src: '/placeholder.svg?height=100&width=100',
-      alt: 'Commons Scholars Logo',
-      width: 100,
-      height: 100
+      src: '/nanofab/microcommons.webp',
+      alt: 'Microelectronic Commons Logo',
     }
   ]
 }
@@ -51,6 +55,11 @@ export const neuralProbeProject: NeuralProbeProject = {
   subtitle: 'Design, Fabrication, & Characterization',
   location: 'at the Biomedical Microsystems Laboratory',
   dateRange: 'July 2024 - Present',
+  pi: 'Research under Professor Ellis Meng',
+  funding1: 'CURVE',
+  funding2: 'Provost',
+  curveLink: 'https://viterbiundergrad.usc.edu/research/curve/',
+  provostLink: 'https://careers.usc.edu/experiences/usc-provosts-undergrad-research-fellowships-2/',
   description: [
     'Since July 2024, I\'ve been helping my lab design, fabricate, and characterize a hybrid silicon-polymer neural recording probe.',
     'This neural probe aims to combine the flexibility of polymer-based neural interfaces and the high electrode density of silicon-based neural interfaces. This hybrid approach enforces high spatial resolution neural recordings while maintaining flexible mechanical properties and biocompatibility required for neural implants.',
@@ -103,49 +112,50 @@ export const researchPaperProject: ResearchPaperProject = {
   authors: ['Mohammad Shafiqul Islam', 'Sangwon Cha', 'Md Farhad Hassan', 'Wenxin Cai', 'Tahsin Sejat Saniat', 'Cedar Rose Leach', 'Yasser Khan'],
   journal: 'Advanced Intelligent Systems',
   publicationDate: 'December 25, 2024',
-  paperLink: 'https://lnkd.in/gq4wVyib',
+  paperLink: 'http://doi.org/10.1002/aisy.202400927',
   thumbnailSrc: '/placeholder.svg?height=300&width=200',
-  abstract: '"Sweattttttt rate measures key physiological states such as hydration levels and heat tolerance. Incorporating wearable technology with sweat rate sensors allows individuals to conveniently monitor their health, optimize workouts, and enhance occupational safety. However, challenges persist in such integration techniques, including intricate manufacturing, nonlinear responses to changes in sweat rates, and errors from the intermediate measurement of the distance sweat travels in the sensor. To address these issues, we present a comprehensive wearable platform that includes a fully printed, flexible sensor patch, readout electronics, and a mobile app for continuous, real-time monitoring of sweat rate. We fabricate a sensor patch with an area of 700 mm2 and a weight of 380 mg by utilizing direct 3D printing and scalable microfluidic fabrication. The microfluidic channels are 850 μm wide and 164 μm thick, with serpentine electrodes measuring sweat rate using capacitance..."',
+  abstract: '"Sweat rate measures key physiological states such as hydration levels and heat tolerance. Incorporating wearable technology with sweat rate sensors allows individuals to conveniently monitor their health, optimize workouts, and enhance occupational safety. However, challenges persist in such integration techniques, including intricate manufacturing, nonlinear responses to changes in sweat rates, and errors from the intermediate measurement of the distance sweat travels in the sensor. To address these issues, we present a comprehensive wearable platform that includes a fully printed, flexible sensor patch, readout electronics, and a mobile app for continuous, real-time monitoring of sweat rate. We fabricate a sensor patch with an area of 700 mm2 and a weight of 380 mg by utilizing direct 3D printing and scalable microfluidic fabrication. The microfluidic channels are 850 μm wide and 164 μm thick, with serpentine electrodes measuring sweat rate using capacitance..."',
   description: ['I helped to visualize and communicate the design of our wearable capacitive sweat sensor by creating detailed 3D models of the capacitive sweat rate sensor in Fusion 360.',
                 'Effective communication is one of the most crucial aspects of any advancements in science, and my hope is that I could enhance the understanding and appreciation of our lab\’s capacitive sweat sensor. Through detailed CAD models, I highlighted the sensors structural layers, design features, material composition, and functionality. Here are some of the designs that were published.'
 ],
   figures: [
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/paper_figs/3LayerAssembly.png',
       caption: 'Capacitive system for the analytical modeling of the Sweat rate sensor’s capacitive systems for analytical modeling. Dielectric encapsulation, two parallel metal electrodes, and the channel by the dielectric encapsulation is shown. Capacitance is formed by the sweat and the air within the channel.'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/paper_figs/electrodesWater.png',
       caption: 'Three layers of the sweat rate sensor. Bottom layer - the encapsulated Ag electrodes on a flexible polyimide substrate. Middle layer -  the patterned microfluidics channel to direct the sweat. Top layer - microfluidics cover. Both the substrate and microfluidic layers are hydrophilic, so they expend a capillary force that directs sweat into the dielectric channel.'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/paper_figs/layer1.png',
       caption: 'Fabrication process - direct 3D writing of two parallel Ag electrodes'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/paper_figs/layer2.png',
       caption: 'Fabrication process -  direct 3D writing of dielectric encapsulation'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/paper_figs/layer3.png',
       caption: 'Fabrication process - assembly of a double-sided microfluidic tape, patterned by using a desktop cutter machine, with the already encapsulated Ag electrodes'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/paper_figs/layer4.png',
       caption: 'Fabrication process - assembly of a microfluidic cover, patterned by using the same desktop cutter machine, concluding the sensor fabrication'
     }
   ]
 }
 
-export const electrochemicalAFEProject: AFEProject = {
+export const elecAFEProject: AFEProject = {
   type: 'research-poster',
   title: 'Analog Front End of Electrochemical Sensing System',
   location: 'at the Khan Lab',
   dateRange: 'Jan 2024 - May 2024',
   curveLink: 'https://viterbiundergrad.usc.edu/research/curve/',
-  posterLink: '/path-to-poster.pdf',
-  posterThumbnail: '/placeholder.svg?height=150&width=100',
-  funding: 'CURVE (Center for Undergraduate Research in Viterbi Engineering)',
+  posterLink: '/afe/CURVE_poster.pdf',
+  posterThumbnail: '/afe/curve_thumbnail.png',
+  funding: 'CURVE',
+  pi: 'Research under Professor Yasser Khan',
   description: [
     'The Khan Lab at USC focuses on wearable sensors for precision health and psychiatry. As a freshman researcher in the Khan Lab I worked on an electrochemical sensing system for potassium ion sensing. My teammate and I developed firmware and hardware for the Analog Front End of an extended gate transistor-based sensor with differential sensing capabilities.',
     'In an extended gate transistor based electrochemical sensing system, the change in chemical activity of analyte species can be detected in the shift of the silicon transistors’ i-v characteristics. With the transistor gate connected to an appropriate electrochemical sensor, the analyte in contact with the sensor will induce a shift in the transistor’s threshold voltage. To collect this electrochemical data, we needed analog-to-digital conversion and a supply of bias to NMOS transistors through the Analog Front End (AFE). We used Analog Devices’ AD5933 and interfaced it with an Arduino to control the transistors and read the drain-source current.',
@@ -153,8 +163,8 @@ export const electrochemicalAFEProject: AFEProject = {
  ],
   images: [
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'Sensor prototype design'
+      src: '/afe/breadboard.jpeg',
+      caption: 'A very messy view of testing our extended-gate transistor'
     },
     {
       src: '/placeholder.svg?height=400&width=800',
@@ -171,17 +181,20 @@ export const memoirProject: AppProject = {
   incubatorName: 'SEP (Sigma Eta Pi)',
   incubatorLink: 'https://uscsep.com/',
   description: [
-        'For the past few months, I\'ve had the privilege of working on something deeply meaningful.'
-  ],
+        'For the past few months, I\'ve had the privilege of working on something deeply meaningful.',
+        'People with visual impairment often face challenges understanding images on the web, photos sent by friends, or reliving cherished memories stored in their personal photo libraries. That\’s why we\’re building Memoir.',
+        'With Memoir, users can interact with, organize, and relive the emotional significance of their photo collections through an audio-based photo library. Our platform creates AI-generated captions to describe every image and allows users to search or filter photos based on content, create and share custom albums, and casually browse through their memories. When paired with screen readers like Apple\’s VoiceOver or Google\’s TalkBack, Memoir transforms visual information into an interactive, audio-based experience for blind users.',
+        'I\’ve had the most incredible time working with my co-founders, Moksh Jhaveri, Marshall Graves, and Isannah Marley. We are currently building and beta testing, and I\’m excited to share more about Memoir\’s journey in the near future.'
+      ],
 
   images: [
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'App interface showing main navigation'
+      src: '/memoir_imgs/Memoir2.jpeg',
+      caption: 'Judges Award + Honorable Mention @ SEP Launch Day'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'Accessibility features demonstration'
+      src: '/memoir_imgs/Memoir1.jpeg',
+      caption: 'Memoir'
     }
   ]
 }
@@ -192,11 +205,13 @@ export const boeingInternship: InternshipProject = {
   location: 'FPGAs, Satellites & Systems, Innovation Challenge',
   dateRange: 'June 2022 - Aug 2022',
   description: [
-        'The Boeing Satellite Development Center in El Segundo, CA is a massive hub of achievement and inspiration. During my summer internship.',
-        'at Boeing, I found myself immersed in the heart of aerospace and innovation, touring the labs and warehouses that send such complex systems to space.'
+        'The Boeing Satellite Development Center in El Segundo, CA is a massive hub of achievement and inspiration. During my summer internship at Boeing, I found myself immersed in the heart of aerospace and innovation, touring the labs and warehouses that send such complex systems to space.',
+        'Here, I was surrounded by people of passion, expertise, and grit; I tried my best to take every opportunity to absorb their knowledge and insights.',
+        'I undertook two main projects during my internship. My individual project focused on configuring a Field Programmable Gate Array (FPGA) using the Versal VCK190 board. This involved designing, simulating, synthesizing, and implementing FPGA scripts using Xilinx\’s Vivado and Vitis tools. This experience introduced me to the fundamentals of FPGA programming, a foundation I have since built upon by strengthening my Verilog skills through Digital Circuits courses at USC.',
+        'I also participated in Boeing\’s LINC Innovation Challenge, where my team developed a concept for an interactive campus navigation system for Boeing employees and visitors. Advancing through three competitive rounds, our team ultimately won the challenge, judged by Boeing\’s Director of Human Resources and President of Commercial Satellite Systems.'
 ],
   companyLogo: {
-    src: '/boeing-logo.png',
+    src: '/Boeing.png',
     alt: 'Boeing Logo',
     width: 200,
     height: 100
@@ -215,12 +230,16 @@ export const smartenderProject: MakerProject = {
   ],
   images: [
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'Complete SmarTender setup'
+      src: '/smartender/on.png',
+      caption: 'SmarTender View 1'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'Internal mechanism detail'
+      src: '/smartender/above.jpeg',
+      caption: 'SmarTender View 2'
+    },
+    {
+      src: '/smartender/gears.jpg',
+      caption: 'Gears for lifting mechanism'
     }
   ]
 }
@@ -237,12 +256,12 @@ export const bcdProject: MakerProject = {
   ],
   images: [
     {
-      src: '/placeholder.svg?height=400&width=800',
+      src: '/bcd/circuit.jpg',
       caption: 'BCI hardware setup'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'Drone control system architecture'
+      src: '/bcd/processed.png',
+      caption: 'Filter raw EEG signals and convert to frequency domain'
     }
   ]
 }

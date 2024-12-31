@@ -44,7 +44,7 @@ export function ResearchPaperProject({ project }: ResearchPaperProjectProps) {
         </div>
         </div>
 
-        <div>
+        <div className="w-2/3 mx-auto">
           <Carousel images={project.figures} />
         </div>
       </div>

@@ -13,12 +13,15 @@ export function AppProject({ project }: AppProjectProps) {
     <ProjectSection
       {...project}
     >
-      <div className="mt-6 grid grid-cols-12 gap-8">
-        <div className="col-span-12 md:col-span-6">
-          <Carousel images={project.images} />
+      <div className="mt-6 grid grid-cols-6 gap-8">
+        <div className="col-span-3 md:col-span-3 flex">
+            <div className="h-full min-w-[30rem] overflow-x-auto aspect-w-8 aspect-h-16">
+                <Carousel images={project.images}/>
+            </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 space-y-6">
+
+        <div className="col-span-3 md:col-span-3 space-y-6">
           <div>
             <p className="mb-4">
               Incubated at{' '}

@@ -15,7 +15,22 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
     <ProjectSection
       {...project}
     >
-      <div className="mt-8 space-y-6">
+    <div>
+        <p className="text-gray-600 mb-4 mt-4 text-center flex items-center justify-center gap-2">
+            <span>{project.pi}</span>
+            <span className="border-l border-gray-300 h-4"></span>
+            <span>
+            Funded by{' '} 
+            <Link href={project.curveLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                {project.funding1}
+            </Link> Fellowship &&nbsp;
+            <Link href={project.provostLink} className="text-purple-600 hover:underline">
+              {project.funding2}
+            </Link> Fellowship
+            </span>
+        </p>
+    </div>
+      <div className="mt-6 space-y-6">
         {project.description?.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
@@ -26,13 +41,7 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
           <AccordionSection key={index} {...skill} />
         ))}
       </div>
-      <div className="flex items-center mt-4"> {/* Wrap button and text in a flex container */}
-        <Button variant="outline" className="flex items-center space-x-2">
-          <FileText className="h-4 w-4" />
-          <span>Click Here</span>
-        </Button>
-        <span className="ml-2">for a more detailed description of my project and contribution.</span>
-      </div>
+      
     </ProjectSection>
   )
 }

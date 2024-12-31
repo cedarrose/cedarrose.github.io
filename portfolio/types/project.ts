@@ -19,7 +19,7 @@ import {
   nanofabProject, 
   neuralProbeProject, 
   researchPaperProject,
-  electrochemicalAFEProject,
+  elecAFEProject,
   memoirProject,
   boeingInternship,
   smartenderProject,
@@ -45,13 +45,13 @@ export interface NanofabProject extends BaseProject {
   logos: Array<{
     src: string
     alt: string
-    width: number
-    height: number
   }>
 }
 
 export interface NeuralProbeProject extends BaseProject {
   type: 'neural-probe'
+  pi: string
+  curveLink: string
   skills: Array<{
     title: string
     content: string
@@ -78,6 +78,7 @@ export interface AFEProject extends BaseProject {
   posterLink: string
   posterThumbnail: string
   funding: string
+  pi: string
   images: Array<{
     src: string
     caption: string

@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ProfileSection } from "@/components/profile-section"
+import { AFEProject } from "@/components/research-poster-project"
 import { NanofabProject } from "@/components/nanofab-project"
 import { NeuralProbeProject } from "@/components/neural-probe-project"
 import { ResearchPaperProject } from "@/components/research-paper-project"
@@ -21,7 +22,8 @@ import {
   memoirProject,
   boeingInternship,
   smartenderProject,
-  bcdProject
+  bcdProject,
+  elecAFEProject
 } from "@/data/projects"
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -48,9 +50,9 @@ export default function Page() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         style={{ opacity, y }}
-        className="container mx-auto px-8 py-16"
+        className="container mx-auto max-w-[400px] px-24 py-16"
       >
-        <h2 className="text-lg font-regular text-gray-800 ml-4 mb-2">
+          <h2 className="text-lg mt-8 text-[#5e5e5e] leading-relaxed max-w-xl ml-4 mb-2">
           What I've Been Working On<span className="inline-block w-[30px]">{dots}</span>
         </h2>
         <div className="border-t border-gray-200 py-4 mb-6 mt-2"></div>
@@ -59,12 +61,10 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
                 <div className="text-left">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#cc5200] group-data-[state=open]:to-[#e68a00]
-
- group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#cc5200] group-data-[state=open]:to-[#e68a00] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {researchPaperProject.title}
                   </h2>
-                  <span className="block text-lg font-normal text-gray-600">
+                  <span className="block font-normal text-gray-600">
                     {researchPaperProject.subtitle && (
                       <span className="block">{researchPaperProject.subtitle}</span>
                     )}
@@ -86,13 +86,13 @@ export default function Page() {
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {neuralProbeProject.title}
                   </h2>
-                  <span className="block text-lg font-normal text-gray-600">
+                  <span className="block font-normal text-gray-600">
                     {neuralProbeProject.subtitle && (
                       <span className="block">{neuralProbeProject.subtitle}</span>
                     )}
                     <span className="block">
                       at the{' '}
-                      <Link href="https://biomems.usc.edu/" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://biomems.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer"> 
                         Biomedical Microsystems Laboratory
                       </Link>
                     </span>
@@ -113,13 +113,13 @@ export default function Page() {
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#e66000] group-data-[state=open]:to-[#ffc329] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {nanofabProject.title}
                   </h2>
-                  <span className="block text-lg font-normal text-gray-600">
+                  <span className="block font-normal text-gray-600">
                     {nanofabProject.subtitle && (
                       <span className="block">{nanofabProject.subtitle}</span>
                     )}
                     <span className="block">
                       at the{' '}
-                      <Link href="https://nanofab.usc.edu/" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://nanofab.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
                         {nanofabProject.location}
                       </Link>
                     </span>
@@ -133,6 +133,32 @@ export default function Page() {
             </AccordionContent>
           </AccordionItem>
 
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
+              <div className="flex justify-between items-start w-full">
+                <div className="text-left">
+                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0788a2] group-data-[state=open]:to-[#14AEBA] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                    {elecAFEProject.title}
+                  </h2>
+                  <span className="block font-normal text-gray-600">
+                    {elecAFEProject.subtitle && (
+                      <span className="block">{elecAFEProject.subtitle}</span>
+                    )}
+                    <span className="block">
+                      at the{' '}
+                      <Link href="https://khan.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                        Khan Lab
+                      </Link>
+                    </span>
+                  </span>
+                </div>
+                <span className="font-normal text-gray-500 ml-4 text-right">{elecAFEProject.dateRange}</span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4">
+              <AFEProject project={elecAFEProject} />
+            </AccordionContent>
+          </AccordionItem>
 
           <AccordionItem value="item-5">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
@@ -141,7 +167,7 @@ export default function Page() {
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#d46a00] group-data-[state=open]:to-[#f0a500] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {memoirProject.title}
                   </h2>
-                  <span className="block text-lg font-normal text-gray-600">
+                  <span className="block font-normal text-gray-600">
                     {memoirProject.subtitle && (
                       <span className="block">{memoirProject.subtitle}</span>
                     )}
@@ -163,7 +189,7 @@ export default function Page() {
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0066CC] group-data-[state=open]:to-[#1E90FF] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {boeingInternship.title}
                   </h2>
-                  <span className="block text-lg font-normal text-gray-600">
+                  <span className="block font-normal text-gray-600">
                     {boeingInternship.subtitle && (
                       <span className="block">{boeingInternship.subtitle}</span>
                     )}
@@ -185,8 +211,12 @@ export default function Page() {
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#b34700] group-data-[state=open]:to-[#d98a0b] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     USC Makers
                   </h2>
-                  <span className="block text-lg font-normal text-gray-600">
-                    <span className="block">University Club</span>
+                  <span className="block font-normal text-gray-600">
+                    <span className="block">
+                    <Link href="https://viterbimakers.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                      University Club
+                    </Link>
+                    </span>
                   </span>
                 </div>
                 <span className="font-normal text-gray-500 ml-4 text-right">2023 - Present</span>
@@ -198,6 +228,11 @@ export default function Page() {
           </AccordionItem>
         </Accordion>
       </motion.section>
+      <footer className="mb-4 py-4 text-center text-sm text-gray-500"></footer>
+      <footer className="mb-4 py-4 text-center text-sm text-gray-500"></footer>
+      <footer className="mb-4 py-4 text-center text-sm text-gray-500">
+        <p>&copy; 2024 Cedar Rose Leach.</p>
+      </footer>
     </main>
   )
 }

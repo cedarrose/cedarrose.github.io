@@ -12,11 +12,11 @@ export function MakersProjects({ projects }: MakersProjectsProps) {
     <ProjectSection
     >
       <div className="mt-4 mb-8">
-        <p className="text-lg text-gray-700">
+        <p className="text-gray-700">
           USC Makers is a university club that encourages students to build innovative and fun projects,
           fostering hands-on learning and creative problem-solving through engineering challenges.
         </p>
-        <p className="text-lg text-gray-700 mt-2">
+        <p className="text-gray-700 mt-2">
           The reason I love this club so much is that we <strong>build</strong> simply for the <strong>fun of building</strong>. Throw practicallity out the window and just <em><strong className="text-[#F97316]">create</strong></em>.
         </p>
       </div>

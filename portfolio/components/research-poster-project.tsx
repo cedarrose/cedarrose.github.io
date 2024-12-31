@@ -1,4 +1,4 @@
-import { AFEProject } from "@/types/project"
+import type { AFEProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import { Carousel } from "./carousel"
 import { Button } from "@/components/ui/button"
@@ -20,22 +20,26 @@ export function AFEProject({ project }: AFEProjectProps) { // export name correc
           <p className="font-semibold text-center text-2x1 mb-4">
           Firmware Development, Testing and PCB Design for the Analog Front End of Extended GateTransistor Based Electrochemical Sensing System
         </p>
+
         </div>
         <div>
-          <p className="text-gray-600 mb-4 text-center">
-            Funded by{' '} 
-            <Link href={project.curveLink} className="text-purple-600 hover:underline">
-              {project.funding}
-            </Link> Fellowship
-          </p>
-        </div>
-
-        <div className="grid grid-cols-12 gap-8 items-start">
-          <div className="col-span-12 md:col-span-8">
+            <p className="text-gray-600 mb-4 text-center flex items-center justify-center gap-2">
+                <span>{project.pi}</span>
+                <span className="border-l border-gray-300 h-4"></span>
+                <span>
+                Funded by{' '} 
+                <Link href={project.curveLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                    {project.funding}
+                </Link> Fellowship
+                </span>
+            </p>
+         </div>
+        <div className="grid grid-cols-6 gap-8 items-start">
+          <div className="col-span-6 md:col-span-4">
             <Carousel images={project.images} />
           </div>
           
-          <div className="col-span-12 md:col-span-4 flex flex-col items-center">
+          <div className="col-span-6 md:col-span-2 flex flex-col items-center">
             <Link 
               href={project.posterLink} 
               target="_blank" 

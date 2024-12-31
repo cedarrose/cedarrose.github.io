@@ -4,19 +4,24 @@ import { motion } from 'framer-motion'
 import { ChevronDown, Linkedin, FileText, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Image from 'next/image' // Import Image for the profile picture
 
 export function ProfileSection() {
   return (
-    <section id="profile" className="min-h-screen relative overflow-hidden">
-      <div className="container mx-auto px-4 min-h-screen flex items-center">
+    <section
+      id="profile"
+      className="min-h-screen relative overflow-hidden bg-dot-grid bg-[length:20px_20px]"
+    >
+      <div className="container mx-auto px-6 min-h-screen flex items-center">
+        {/* Left Side: Text and Links */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl"
+          className="flex-1 max-w-full md:max-w-[50%] px-4"
         >
           <h1 className="text-2xl text-[#2e2e2e] mb-4">
-            Hi, I'm <span className="font-semibold text-5xl mt-2">Cedar Rose Leach</span>
+            <span className="font-semibold text-5xl mt-2">Cedar Rose Leach</span>
           </h1>
           <h2 className="text-2xl text-[#590e0e] mb-6">
             Electrical and Computer Engineering
@@ -59,6 +64,22 @@ export function ProfileSection() {
               </Button>
             </Link>
           </div>
+        </motion.div>
+
+        {/* Right Side: Profile Image */}
+        <motion.div 
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex-1 max-w-full md:max-w-[50%] px-4"
+        >
+          <Image
+            src="/profile.jpeg" 
+            alt="Cedar Rose Leach"
+            width={500}
+            height={500}
+            className="object-cover w-full h-auto"
+          />
         </motion.div>
       </div>
 
