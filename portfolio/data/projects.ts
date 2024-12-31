@@ -167,8 +167,8 @@ export const elecAFEProject: AFEProject = {
       caption: 'A very messy view of testing our extended-gate transistor'
     },
     {
-      src: '/placeholder.svg?height=400&width=800',
-      caption: 'Testing setup and calibration'
+      src: '/afe/transistor.jpeg',
+      caption: 'Extended gate transistor setups and PCB layout of analog front end'
     }
   ]
 }
