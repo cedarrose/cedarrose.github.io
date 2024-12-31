@@ -73,7 +73,7 @@ export function ProfileSection() {
           className="flex-1 max-w-full md:max-w-[50%] px-4"
         >
           <Image
-            src="/profile.png" 
+            src="/profile.jpeg" 
             alt="Cedar Rose Leach"
             width={500}
             height={500}
