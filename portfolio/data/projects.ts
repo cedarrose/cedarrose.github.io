@@ -189,7 +189,7 @@ export const memoirProject: AppProject = {
 
   images: [
     {
-      src: '/memoir_imgs/Memoir2.jpeg',
+      src: '/memoir_imgs/Memoir2.png',
       caption: 'Judges Award + Honorable Mention @ SEP Launch Day'
     },
     {
