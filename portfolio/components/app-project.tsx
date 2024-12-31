@@ -15,7 +15,7 @@ export function AppProject({ project }: AppProjectProps) {
     >
       <div className="mt-6 grid grid-cols-6 gap-8">
         <div className="col-span-3 md:col-span-3 flex">
-            <div className="h-full min-w-[30rem] overflow-x-auto aspect-w-8 aspect-h-16">
+            <div className="h-full min-w-[10rem] md:w-[25rem] overflow-x-auto aspect-w-8 aspect-h-16">
                 <Carousel images={project.images}/>
             </div>
         </div>
@@ -25,7 +25,7 @@ export function AppProject({ project }: AppProjectProps) {
           <div>
             <p className="mb-4">
               Incubated at{' '}
-              <Link href={project.incubatorLink} className="text-[#be5f00] hover:underline">
+              <Link href={project.incubatorLink} className="text-[#be5f00] hover:underline" target="_blank" rel="noopener noreferrer">
                 {project.incubatorName}
               </Link>
             </p>

@@ -50,8 +50,8 @@ export default function Page() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         style={{ opacity, y }}
-        className="container col-span-6 md:col-span-6 mx-auto max-w-[400px] px-24 py-16"
-      >
+        className="container mx-auto md:px-20 max-w-[400px] py-16"
+      > 
           <h2 className="text-lg mt-8 text-[#5e5e5e] leading-relaxed max-w-xl ml-4 mb-2">
           What I've Been Working On<span className="inline-block w-[30px]">{dots}</span>
         </h2>
@@ -214,12 +214,12 @@ export default function Page() {
                   <span className="block font-normal text-gray-600">
                     <span className="block">
                     <Link href="https://viterbimakers.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                      University Club
+                      University Electrical Engineering Club
                     </Link>
                     </span>
                   </span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">2023 - Present</span>
+                <span className="font-normal text-gray-500 ml-4 text-right">Sept 2023 - Present</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">

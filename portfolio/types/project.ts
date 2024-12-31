@@ -52,6 +52,9 @@ export interface NeuralProbeProject extends BaseProject {
   type: 'neural-probe'
   pi: string
   curveLink: string
+  provostLink: string
+  funding1: string
+  funding2: string
   skills: Array<{
     title: string
     content: string

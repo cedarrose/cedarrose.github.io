@@ -30,9 +30,8 @@ export function ProfileSection() {
           <p className="text-[#5e5e5e] text-lg mb-12">Class of 2027</p>
           
           <p className="text-lg text-[#5e5e5e] mb-12 leading-relaxed max-w-xl">
-            Passionate about innovation at the intersection of electrical engineering and biomedical applications. 
-            Focusing on nanofabrication, neural interfaces, and wearable technology while pursuing groundbreaking 
-            research in next-generation medical devices.
+              Passionate about innovation at the intersection of electrical engineering and biomedical applications. 
+              Focusing on nanofabrication, neural interfaces, and wearable technology, in the pursuit of developing next-generation medical devices.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 text-[#5e5e5e] text-regular">
@@ -74,7 +73,7 @@ export function ProfileSection() {
           className="flex-1 max-w-full md:max-w-[50%] px-4"
         >
           <Image
-            src="/profile.jpeg" 
+            src="/profile.png" 
             alt="Cedar Rose Leach"
             width={500}
             height={500}

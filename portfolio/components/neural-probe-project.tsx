@@ -24,7 +24,7 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
             <Link href={project.curveLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
                 {project.funding1}
             </Link> Fellowship &&nbsp;
-            <Link href={project.provostLink} className="text-purple-600 hover:underline">
+            <Link href={project.provostLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
               {project.funding2}
             </Link> Fellowship
             </span>

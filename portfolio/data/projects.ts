@@ -7,26 +7,26 @@ import { MakerProject } from '@/types/project'
 export const nanofabProject: NanofabProject = {
   type: 'nanofab',
   title: 'Semiconductor Nanofabrication',
-  location: 'John O\'brien Nanofabrication Laboratory',
+  location: 'John O\'Brien Nanofabrication Laboratory',
   dateRange: 'June 2024 - July 2024',
   description: [
-    'I had the privilege of being part of the inaugural cohort of the ME Commons Scholars Program, which launched this summer. The program featured two immersive phases: a two-week CA DREAMS Cleanroom Gateway at USC’s John O’Brien Nanofabrication Laboratory, where I received hands-on training, followed by a six-week internship.',
+    'I had the privilege of being part of the inaugural cohort of the Microelectronics Commons Scholars Program, which launched this summer. The program featured two immersive phases: a two-week CA DREAMS Cleanroom Gateway at USC’s John O’Brien Nanofabrication Laboratory, where I received hands-on training, followed by a six-week internship.',
     'During the Cleanroom Gateway, I gained skills in wafer cleaning and handling, photolithography, deposition, etching, metrology, machine operation, and cleanroom safety practices. This foundational training prepared me for my internship.',
-    'My internship began with a couple of weeks of cleanroom machine calibration, where I conducted multiple trials of SiO₂ deposition on cleaved silicon wafers to measure and recalibrate the faulty PECVD deposition rate. I then joined the Biomedical Microsystems Laboratory, which focuses on developing micro/nanotechnologies for biomedical applications. Here, I was fascinated by the fabrication process of a novel silicon-polymer neural probe, and I continued my research into the school year.',
+    'My internship began with cleanroom machine calibration, where I conducted multiple trials of SiO₂ deposition on cleaved silicon wafers to measure and recalibrate the faulty PECVD deposition rate. I then joined the Biomedical Microsystems Laboratory, which focuses on developing micro/nanotechnologies for biomedical applications. Here, I was fascinated by the fabrication process of a novel silicon-polymer neural probe, and I continued my research into the school year.',
     'Programs that offer such comprehensive and specialized training in this specialized industry are exceptionally rare, and I am grateful to have gained such valuable knowledge and experience in this field.',
   ],
   images: [
     {
       src: '/nanofab/cleanroom.jpeg',
-      caption: 'A Photolithography section of the John O\'brien nanofabrication cleanroom.'
+      caption: 'A Photolithography section of the John O\'Brien nanofabrication cleanroom'
     },
     {
       src: '/nanofab/spinner.jpeg',
-      caption: 'Spinning photoresist evenly on my wafer as part of the lithography process.'
+      caption: 'Spinning photoresist evenly on my wafer as part of the lithography process'
     },
     {
       src: '/nanofab/neuralprobe.jpeg',
-      caption: 'Wafer full of nerual probes that I fabricated through photolithography, deposition, etching, & liftoff'
+      caption: 'Wafer full of neural probes that I fabricated through photolithography, deposition, etching, & liftoff'
     },
     {
       src: '/nanofab/deposition.jpeg',
@@ -61,17 +61,16 @@ export const neuralProbeProject: NeuralProbeProject = {
   curveLink: 'https://viterbiundergrad.usc.edu/research/curve/',
   provostLink: 'https://careers.usc.edu/experiences/usc-provosts-undergrad-research-fellowships-2/',
   description: [
-    'Since July 2024, I\'ve been helping my lab design, fabricate, and characterize a hybrid silicon-polymer neural recording probe.',
-    'This neural probe aims to combine the flexibility of polymer-based neural interfaces and the high electrode density of silicon-based neural interfaces. This hybrid approach enforces high spatial resolution neural recordings while maintaining flexible mechanical properties and biocompatibility required for neural implants.',
-    'The neural probe is composed of a flexible shank with 1-3 application-specific integrated circuits (ASICs) on the coil. Digitized neural recordings are transmitted via inductive coupling between the ASIC coils and the probe coil. To create this hybrid neural probe, I have assisted my lab in developing and testing the fabrication procedure for the flexible shank.',
-    'I joined this lab in July of last summer after a month of training in semiconductor fabrication processes in the cleanroom. I was able to translate this knowledge of fabrication at a nanoscale to my lab’s development of neural interfaces. I truly enjoy the process of creating this device. It’s a ton of trial and error, brainstorming different fabrication methods and figuring out what works and what doesn’t. I can think of at least 6 different fabrication approaches that I have undertaken, and each approach has so many different variations in tweaking the mold CAD file, or the material of the coil, or the method of transferring it to the substrate, or the coil-forming methods that I use.',
-    'While there are standard fabrication processes for creating neural probes (deposition, etching, liftoff), our project requires a new approach to fabricate because we dealing with a much thicker layer of conductive material to secure a stable connection from the inductive coupling between the primary coil and the ASIC’s coil.',
-    'Within the  process of brainstorming, designing, fabricating, and characterizing the neural probe, I’ve learned a number of new knowledge and sharpened various skills ',
+    'Since July 2024, I\'ve been helping to design, fabricate, and characterize a hybrid silicon-polymer neural recording probe.',
+    'This neural probe aims to combine the flexibility of polymer-based neural interfaces and the high electrode density of silicon-based neural interfaces. This hybrid approach enforces high spatial resolution neural recordings while maintaining flexible mechanical properties and biocompatibility required for neural implants. To create this novel neural probe, I am assisting in developing and testing the fabrication procedure for the flexible shank.', 
+    'I joined this lab last summer after a month of training in semiconductor fabrication processes in the cleanroom. I was able to translate this knowledge of nanofabrication to the lab’s development of neural interfaces. I truly enjoy the process of creating this device. It’s a ton of trial and error, brainstorming different fabrication methods and figuring out what works and what doesn’t. I can think of at least six different fabrication approaches that we have undertaken, and each approach has many different variations - tweaking the mold CAD file, or the material of the coil, or the method of transferring the coil to the substrate, or the coil-forming strategies.',
+    'There are standard fabrication processes for creating neural probes (e.g. photolithography deposition, etching, liftoff). However, our project requires a new fabrication approach since we are dealing with a much thicker layer of conductive material.',
+    'Throughout the process of brainstorming, designing, fabricating, and characterizing the neural probe, I have gained valuable knowledge and honed a variety of skills, including:'
   ],
   skills: [
     {
       title: "Femtosecond Laser Ablation",
-      content: "To precisely pattern coils from a titanium sheet for one rendition of the neural probe"
+      content: "To precisely pattern coils from a titanium sheet for one rendition of the neural probe."
     },
     {
       title: "Fusion 360 CAD",
@@ -83,7 +82,7 @@ export const neuralProbeProject: NeuralProbeProject = {
     },
     {
       title: "Device Packaging",
-      content: "Soldering and coil molding to create the primary coil and neural probe shank.  Attached SMA connectors for testing and measurements"
+      content: "Soldering and coil molding to create the primary coil and neural probe shank.  Attached SMA connectors for testing and measurements."
     },
     {
       title: "S-param Data Anylitics",
@@ -116,16 +115,16 @@ export const researchPaperProject: ResearchPaperProject = {
   thumbnailSrc: '/placeholder.svg?height=300&width=200',
   abstract: '"Sweat rate measures key physiological states such as hydration levels and heat tolerance. Incorporating wearable technology with sweat rate sensors allows individuals to conveniently monitor their health, optimize workouts, and enhance occupational safety. However, challenges persist in such integration techniques, including intricate manufacturing, nonlinear responses to changes in sweat rates, and errors from the intermediate measurement of the distance sweat travels in the sensor. To address these issues, we present a comprehensive wearable platform that includes a fully printed, flexible sensor patch, readout electronics, and a mobile app for continuous, real-time monitoring of sweat rate. We fabricate a sensor patch with an area of 700 mm2 and a weight of 380 mg by utilizing direct 3D printing and scalable microfluidic fabrication. The microfluidic channels are 850 μm wide and 164 μm thick, with serpentine electrodes measuring sweat rate using capacitance..."',
   description: ['I helped to visualize and communicate the design of our wearable capacitive sweat sensor by creating detailed 3D models of the capacitive sweat rate sensor in Fusion 360.',
-                'Effective communication is one of the most crucial aspects of any advancements in science, and my hope is that I could enhance the understanding and appreciation of our lab\’s capacitive sweat sensor. Through detailed CAD models, I highlighted the sensors structural layers, design features, material composition, and functionality. Here are some of the designs that were published.'
+                'Effective communication is one of the most crucial aspects of any advancements in science, and my hope is that I could enhance the understanding and appreciation of our lab\’s capacitive sweat sensor. Through detailed CAD models, I highlighted the sensors structural layers, design features, material composition, and functionality. Here are some of the published designs:'
 ],
   figures: [
     {
       src: '/paper_figs/3LayerAssembly.png',
-      caption: 'Capacitive system for the analytical modeling of the Sweat rate sensor’s capacitive systems for analytical modeling. Dielectric encapsulation, two parallel metal electrodes, and the channel by the dielectric encapsulation is shown. Capacitance is formed by the sweat and the air within the channel.'
+      caption: 'Three layers of the sweat rate sensor. Bottom layer - the encapsulated Ag electrodes on a flexible polyimide substrate. Middle layer -  the patterned microfluidics channel to direct the sweat. Top layer - microfluidics cover. Both the substrate and microfluidic layers are hydrophilic, so they generate a capillary force that directs sweat into the dielectric channel.'
     },
     {
       src: '/paper_figs/electrodesWater.png',
-      caption: 'Three layers of the sweat rate sensor. Bottom layer - the encapsulated Ag electrodes on a flexible polyimide substrate. Middle layer -  the patterned microfluidics channel to direct the sweat. Top layer - microfluidics cover. Both the substrate and microfluidic layers are hydrophilic, so they expend a capillary force that directs sweat into the dielectric channel.'
+      caption: 'Capacitive system for the analytical modeling of the sweat rate sensor. Capacitance is formed by the sweat and the air within the dielectric channel. Dielectric encapsulation and the two parallel metal electrodes are shown.' 
     },
     {
       src: '/paper_figs/layer1.png',
@@ -158,7 +157,7 @@ export const elecAFEProject: AFEProject = {
   pi: 'Research under Professor Yasser Khan',
   description: [
     'The Khan Lab at USC focuses on wearable sensors for precision health and psychiatry. As a freshman researcher in the Khan Lab I worked on an electrochemical sensing system for potassium ion sensing. My teammate and I developed firmware and hardware for the Analog Front End of an extended gate transistor-based sensor with differential sensing capabilities.',
-    'In an extended gate transistor based electrochemical sensing system, the change in chemical activity of analyte species can be detected in the shift of the silicon transistors’ i-v characteristics. With the transistor gate connected to an appropriate electrochemical sensor, the analyte in contact with the sensor will induce a shift in the transistor’s threshold voltage. To collect this electrochemical data, we needed analog-to-digital conversion and a supply of bias to NMOS transistors through the Analog Front End (AFE). We used Analog Devices’ AD5933 and interfaced it with an Arduino to control the transistors and read the drain-source current.',
+    'In an extended gate transistor-based electrochemical sensing system, the change in chemical activity of analyte species can be detected in the shift of the silicon transistors’ i-v characteristics. With the transistor gate connected to an appropriate electrochemical sensor, the analyte in contact with the sensor will induce a shift in the transistor’s threshold voltage. To collect this electrochemical data, we needed analog-to-digital conversion and a supply of bias to NMOS transistors through the Analog Front End (AFE). We used Analog Devices’ AD5933 and interfaced it with an Arduino to control the transistors and read the drain-source current.',
     'We created two setups, single-ended and differential printed sensors, and connected the transistor gate to the gold working electrode of the chosen setup. We developed the firmware to interface the Arduino with the digital-to-analog converter (DAC), which provides bias to the NMOS transistors. We created the AFE system from a breadboard, Arduino UNO, and DAC, but I created a PCB layout of the AFE for future use.',
  ],
   images: [
@@ -225,8 +224,8 @@ export const smartenderProject: MakerProject = {
   dateRange: 'Aug 2023 - April 2024',
   status: 'completed',
   description: [
-    'Last year, I worked with my team to create an autonomous assembly line robot that dispenses and prepares drinks depending on user input',
-    'We modeled its movement mechanisms after 3D printer linear rails and implemented different drink combinations with an ice-dispensing function and some really fun LEDS.'
+    'Last year, I worked with my team to create an autonomous assembly line robot that dispenses and prepares beverages depending on user input.',
+    'We modeled its movement mechanisms after 3D printer linear rails and implemented different beverage combinations with an ice-dispensing function and some really fun LEDS.'
   ],
   images: [
     {
@@ -251,8 +250,8 @@ export const bcdProject: MakerProject = {
   dateRange: 'Aug 2024 - Present',
   status: 'in-progress',
   description: [
-    'This year, I\'m making an EEG-controlled drone using a homemade brain-computer interface',
-    'We\'ve been implementing neural signal processing and will focus on drone flight control algorithms later on'
+    'This year, I\'m making an EEG-controlled drone using a homemade brain-computer interface.',
+    'We\'ve been implementing neural signal processing and will focus on drone flight control algorithms later on.'
   ],
   images: [
     {
