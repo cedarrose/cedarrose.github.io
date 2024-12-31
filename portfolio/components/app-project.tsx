@@ -1,4 +1,4 @@
-import { AppProject } from "@/types/project"
+import type { AppProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import { Carousel } from "./carousel"
 import Link from "next/link"

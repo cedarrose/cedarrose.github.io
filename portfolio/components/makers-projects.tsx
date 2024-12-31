@@ -10,10 +10,6 @@ interface MakersProjectsProps {
 export function MakersProjects({ projects }: MakersProjectsProps) {
   return (
     <ProjectSection
-      title="USC Makers"
-      location="University Club"
-      dateRange="2023 - Present"
-      accentColor="from-[#F97316] to-[#FB923C]"
     >
       <div className="mt-4 mb-8">
         <p className="text-lg text-gray-700">

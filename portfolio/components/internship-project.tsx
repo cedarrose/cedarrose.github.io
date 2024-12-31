@@ -1,4 +1,4 @@
-import { InternshipProject } from "@/types/project"
+import type { InternshipProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import Image from "next/image"
 
@@ -10,7 +10,6 @@ export function InternshipProject({ project }: InternshipProjectProps) {
   return (
     <ProjectSection
       {...project}
-      accentColor="from-[#0EA5E9] to-[#38BDF8]"
     >
         <div className="col-span-12 md:col-span-9 space-y-4">
           <div className="space-y-6 mt-4">

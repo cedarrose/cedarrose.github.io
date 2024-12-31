@@ -1,4 +1,4 @@
-import { NeuralProbeProject } from "@/types/project"
+import type { NeuralProbeProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import { AccordionSection } from "./accordion-section"
 import { Button } from "@/components/ui/button"
@@ -14,21 +14,11 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
   return (
     <ProjectSection
       {...project}
-      accentColor="from-[from-[#007d92]-to-[#00a1b3]"
     >
       <div className="mt-8 space-y-6">
         {project.description?.map((text, index) => (
-          <p key={index}>
-            {text.includes('flexibility') ? (
-              <>
-                This neural probe endeavors to combine the{' '}
-                <span className="text-[#3B82F6]">flexibility of polymer-based neural interfaces</span>{' '}
-                and the{' '}
-                <span className="text-[#3B82F6]">high electrode density of silicon-based neural interfaces</span>
-              </>
-            ) : text}
-          </p>
-        ))}
+            <p key={index}>{text}</p>
+          ))}
       </div>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">

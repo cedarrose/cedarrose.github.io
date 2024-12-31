@@ -1,4 +1,4 @@
-import { NanofabProject } from "@/types/project"
+import type { NanofabProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import { Carousel } from "./carousel"
 import { MediaCard } from "./media-card"
@@ -29,7 +29,6 @@ export function NanofabProject({ project }: NanofabProjectProps) {
   return (
     <ProjectSection
       {...project}
-      accentColor="from-[#D4821F] to-[#F6B352]"
     >
       <div className="mt-6 grid grid-cols-12 gap-8">
         <div className="col-span-12 md:col-span-5 space-y-4">

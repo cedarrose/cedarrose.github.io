@@ -66,7 +66,6 @@ export interface ResearchPaperProject extends BaseProject {
   paperLink: string
   thumbnailSrc: string
   abstract : string
-  contribution: string
   figures: Array<{
     src: string
     caption: string
@@ -75,7 +74,7 @@ export interface ResearchPaperProject extends BaseProject {
 
 export interface AFEProject extends BaseProject {
   type: 'research-poster'
-  labLink: string
+  curveLink: string
   posterLink: string
   posterThumbnail: string
   funding: string
@@ -121,4 +120,4 @@ export type Project =
   | AFEProject
   | AppProject
   | InternshipProject
-  | MakersProjects
+  | MakerProject

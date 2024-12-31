@@ -1,4 +1,4 @@
-import { ResearchPaperProject } from "@/types/project"
+import type { ResearchPaperProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import { Carousel } from "./carousel"
 import { Button } from "@/components/ui/button"
@@ -12,9 +12,7 @@ interface ResearchPaperProjectProps {
 export function ResearchPaperProject({ project }: ResearchPaperProjectProps) {
   return (
     <ProjectSection
-      location={project.location}
-      dateRange={project.dateRange}
-      accentColor="from-[#10B981] to-[#34D399]"
+        {...project}
     >
       <div className="mt-6 space-y-4 bg-white p-4 ">
         <h2 className="text-2xl font-semibold text-center mb-2 italic">Printed wearable sweat rate sensor for continuous in-situ perspiration measurement</h2>
@@ -40,7 +38,7 @@ export function ResearchPaperProject({ project }: ResearchPaperProjectProps) {
         <div className="border-t border-gray-200 py-4 mb-6">
           <h3 className="text-xl font-semibold mb-2">My Contribution</h3>
           <div className="space-y-4">
-          {project.contribution?.map((text, index) => (
+          {project.description?.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
         </div>

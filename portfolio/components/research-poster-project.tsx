@@ -13,14 +13,13 @@ interface AFEProjectProps {
 export function AFEProject({ project }: AFEProjectProps) { // export name corrected to AFEProject
   return (
     <ProjectSection
-      {...project}
-      accentColor="from-[#8B5CF6] to-[#A78BFA]"
     >
       <div className="mt-6 space-y-6">
 
         <div>
           <p className="font-semibold text-center text-2x1 mb-4">
           Firmware Development, Testing and PCB Design for the Analog Front End of Extended GateTransistor Based Electrochemical Sensing System
+        </p>
         </div>
         <div>
           <p className="text-gray-600 mb-4 text-center">

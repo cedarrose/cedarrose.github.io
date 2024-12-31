@@ -1,4 +1,4 @@
-import { MakerProject } from "@/types/project"
+import type { MakerProject } from "@/types/project"
 import { ProjectSection } from "./project-section"
 import { Carousel } from "./carousel"
 import { Badge } from "@/components/ui/badge"
@@ -11,7 +11,6 @@ export function MakerProject({ project }: MakerProjectProps) {
   return (
     <ProjectSection
       {...project}
-      accentColor="from-[#F97316] to-[#FB923C]"
     >
       <div className="mt-6 space-y-6">
         <div className="flex items-center gap-4">
