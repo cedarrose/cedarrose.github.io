@@ -30,7 +30,7 @@ export function AFEProject({ project }: AFEProjectProps) { // export name correc
                 Funded by{' '} 
                 <Link href={project.curveLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
                     {project.funding}
-                </Link> Fellowship
+                </Link>
                 </span>
             </p>
          </div>

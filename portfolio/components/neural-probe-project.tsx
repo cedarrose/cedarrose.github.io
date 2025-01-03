@@ -23,10 +23,10 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
             Funded by{' '} 
             <Link href={project.curveLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
                 {project.funding1}
-            </Link> Fellowship &&nbsp;
+            </Link> and&nbsp;
             <Link href={project.provostLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
               {project.funding2}
-            </Link> Fellowship
+            </Link> 
             </span>
         </p>
     </div>

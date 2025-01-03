@@ -56,10 +56,10 @@ export const neuralProbeProject: NeuralProbeProject = {
   location: 'at the Biomedical Microsystems Laboratory',
   dateRange: 'July 2024 - Present',
   pi: 'Research under Professor Ellis Meng',
-  funding1: 'CURVE',
-  funding2: 'Provost',
+  funding1: 'CURVE Fellowship',
+  funding2: 'USC Provost\'s Undergraduate Research Fellowship',
   curveLink: 'https://viterbiundergrad.usc.edu/research/curve/',
-  provostLink: 'https://careers.usc.edu/experiences/usc-provosts-undergrad-research-fellowships-2/',
+  provostLink: 'https://academicprograms.usc.edu/services/undergraduate-research-and-experiential-learning/usc-provosts-undergraduate-research-fellowships/',
   description: [
     'Since July 2024, I\'ve been helping to design, fabricate, and characterize a hybrid silicon-polymer neural recording probe.',
     'This neural probe aims to combine the flexibility of polymer-based neural interfaces and the high electrode density of silicon-based neural interfaces. This hybrid approach enforces high spatial resolution neural recordings while maintaining flexible mechanical properties and biocompatibility required for neural implants. To create this novel neural probe, I am assisting in developing and testing the fabrication procedure for the flexible shank.', 
@@ -128,19 +128,19 @@ export const researchPaperProject: ResearchPaperProject = {
     },
     {
       src: '/paper_figs/layer1.png',
-      caption: 'Fabrication process - direct 3D writing of two parallel Ag electrodes'
+      caption: 'Fabrication process - direct 3D writing of two parallel Ag electrodes.'
     },
     {
       src: '/paper_figs/layer2.png',
-      caption: 'Fabrication process -  direct 3D writing of dielectric encapsulation'
+      caption: 'Fabrication process -  direct 3D writing of dielectric encapsulation.'
     },
     {
       src: '/paper_figs/layer3.png',
-      caption: 'Fabrication process - assembly of a double-sided microfluidic tape, patterned by using a desktop cutter machine, with the already encapsulated Ag electrodes'
+      caption: 'Fabrication process - assembly of a double-sided microfluidic tape, patterned by using a desktop cutter machine, with the already encapsulated Ag electrodes.'
     },
     {
       src: '/paper_figs/layer4.png',
-      caption: 'Fabrication process - assembly of a microfluidic cover, patterned by using the same desktop cutter machine, concluding the sensor fabrication'
+      caption: 'Fabrication process - assembly of a microfluidic cover, patterned by using the same desktop cutter machine, concluding the sensor fabrication.'
     }
   ]
 }
@@ -153,7 +153,7 @@ export const elecAFEProject: AFEProject = {
   curveLink: 'https://viterbiundergrad.usc.edu/research/curve/',
   posterLink: '/afe/CURVE_poster.pdf',
   posterThumbnail: '/afe/curve_thumbnail.png',
-  funding: 'CURVE',
+  funding: 'CURVE Fellowship',
   pi: 'Research under Professor Yasser Khan',
   description: [
     'The Khan Lab at USC focuses on wearable sensors for precision health and psychiatry. As a freshman researcher in the Khan Lab I worked on an electrochemical sensing system for potassium ion sensing. My teammate and I developed firmware and hardware for the Analog Front End of an extended gate transistor-based sensor with differential sensing capabilities.',
@@ -182,7 +182,7 @@ export const memoirProject: AppProject = {
   description: [
         'For the past few months, I\'ve had the privilege of working on something deeply meaningful.',
         'People with visual impairment often face challenges understanding images on the web, photos sent by friends, or reliving cherished memories stored in their personal photo libraries. That\’s why we\’re building Memoir.',
-        'With Memoir, users can interact with, organize, and relive the emotional significance of their photo collections through an audio-based photo library. Our platform creates AI-generated captions to describe every image and allows users to search or filter photos based on content, create and share custom albums, and casually browse through their memories. When paired with screen readers like Apple\’s VoiceOver or Google\’s TalkBack, Memoir transforms visual information into an interactive, audio-based experience for blind users.',
+        'As an audio-based photo library, Memoir enables users to interact with, organize, and relive the emotional significance of their photo collections. Our platform creates AI-generated captions to describe every image and allows users to search or filter photos based on content, create and share custom albums, and casually browse through their memories. When paired with screen readers like Apple\’s VoiceOver or Google\’s TalkBack, Memoir transforms visual information into an interactive, audio-based experience for blind users.',
         'I\’ve had the most incredible time working with my co-founders, Moksh Jhaveri, Marshall Graves, and Isannah Marley. We are currently building and beta testing, and I\’m excited to share more about Memoir\’s journey in the near future.'
       ],
 
