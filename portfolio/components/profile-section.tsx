@@ -31,7 +31,7 @@ export function ProfileSection() {
 
       <p className="text-lg text-[#5e5e5e] mb-12 leading-relaxed max-w-xl">
           Passionate about innovation at the intersection of electrical engineering and biomedical applications. 
-          Focusing on nanofabrication, neural interfaces, and wearable technology, in the pursuit of developing next-generation medical devices.
+          Focusing on nanofabrication, neural interfaces, and wearable sensors, and accessible technology.
       </p>
 
       <div className="flex flex-wrap items-center gap-6 text-[#5e5e5e] text-regular">
