@@ -26,7 +26,9 @@ export function ProfileSection() {
       <h2 className="text-2xl text-[#590e0e] mb-6">
         Electrical and Computer Engineering
       </h2>
-      <p className="text-[#5e5e5e] text-lg pt-4 mb-2">University of Southern California</p>
+      <div className="flex items-center gap-2">
+        <p className="text-[#5e5e5e] text-lg pt-4 mb-2">University of Southern California</p>
+      </div>
       <p className="text-[#5e5e5e] text-lg mb-12">Class of 2027</p>
 
       <p className="text-lg text-[#5e5e5e] mb-12 leading-relaxed max-w-xl">

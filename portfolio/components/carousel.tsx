@@ -28,12 +28,14 @@ export function Carousel({ images }: CarouselProps) {
   return (
     <div className="relative">
       <div className="overflow-hidden rounded-lg">
-        <div className="relative aspect-[2/1] w-full">
+        <div className="relative h-[300px] w-full">
           <Image
             src={images[currentIndex].src}
             alt={`Slide ${currentIndex + 1}`}
             fill
-            className="object-cover"
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
           />
         </div>
       </div>
@@ -68,7 +70,7 @@ export function Carousel({ images }: CarouselProps) {
           ))}
         </div>
       </div>
-      <div className="mt-2 text-center text-sm text-gray-600">
+      <div className="mt-1 text-center text-sm text-gray-600">
         {images[currentIndex].caption}
       </div>
     </div>

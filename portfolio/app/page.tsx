@@ -6,7 +6,7 @@ import { AFEProject } from "@/components/research-poster-project"
 import { NanofabProject } from "@/components/nanofab-project"
 import { NeuralProbeProject } from "@/components/neural-probe-project"
 import { ResearchPaperProject } from "@/components/research-paper-project"
-import { AppProject } from "@/components/app-project"
+import { AppProject } from "@/components/memoir-project"
 import { InternshipProject } from "@/components/internship-project"
 import { MakersProjects } from "@/components/makers-projects"
 import {
@@ -92,7 +92,7 @@ export default function Page() {
                     )}
                     <span className="block">
                       at the{' '}
-                      <Link href="https://biomems.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer"> 
+                      <Link href="https://biomems.usc.edu/" className="italic underline hover:text-blue-600" target="_blank" rel="noopener noreferrer"> 
                         Biomedical Microsystems Laboratory
                       </Link>
                     </span>
@@ -119,7 +119,7 @@ export default function Page() {
                     )}
                     <span className="block">
                       at the{' '}
-                      <Link href="https://nanofab.usc.edu/" className="italic underline hover:underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://nanofab.usc.edu/" className="italic underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
                         {nanofabProject.location}
                       </Link>
                     </span>

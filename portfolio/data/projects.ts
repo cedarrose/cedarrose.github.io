@@ -1,6 +1,6 @@
 import { NanofabProject, NeuralProbeProject, ResearchPaperProject } from '@/types/project'
 import { AFEProject } from '@/types/project'
-import { AppProject } from '@/types/project'
+import { AppProject as MemoirProject } from '@/types/project'
 import { InternshipProject } from '@/types/project'
 import { MakerProject } from '@/types/project'
 
@@ -172,7 +172,7 @@ export const elecAFEProject: AFEProject = {
   ]
 }
 
-export const memoirProject: AppProject = {
+export const memoirProject: MemoirProject = {
   type: 'app',
   title: 'Memoir',
   dateRange: 'Oct 2024 - Present',
@@ -188,13 +188,21 @@ export const memoirProject: AppProject = {
 
   images: [
     {
-      src: '/memoir_imgs/memoir2.png',
+      src: '/memoir_imgs/memoirLogo.png',
+      caption: 'Memoir'
+    },
+    {
+      src: '/memoir_imgs/memoirSEP.png',
       caption: 'Judges Award + Honorable Mention @ SEP Launch Day'
     },
     {
-      src: '/memoir_imgs/Memoir1.jpeg',
-      caption: 'Memoir'
-    }
+      src: '/memoir_imgs/memoirUI.png',
+      caption: 'UI Flow'
+    },
+    {
+      src: '/memoir_imgs/memoirFeatures.png',
+      caption: 'Features'
+    },
   ]
 }
 
@@ -248,10 +256,10 @@ export const bcdProject: MakerProject = {
   title: 'BCD - Brain Controlled Drone',
   location: 'USC Makers',
   dateRange: 'Aug 2024 - Present',
-  status: 'in-progress',
+  status: 'completed',
   description: [
-    'This year, I\'m making an EEG-controlled drone using a homemade brain-computer interface.',
-    'We\'ve been implementing neural signal processing and will focus on drone flight control algorithms later on.'
+    'This year, I made an EEG-controlled drone using a custom brain-computer interface.',
+    'We implemented drone flight commands trained on processed neural signals retrieved from the BCI.'
   ],
   images: [
     {

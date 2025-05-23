@@ -6,7 +6,7 @@ import { NanofabProject } from "@/components/nanofab-project"
 import { NeuralProbeProject } from "@/components/neural-probe-project"
 import { ResearchPaperProject } from "@/components/research-paper-project"
 import { AFEProject as AFEProjectComponent } from "@/components/research-poster-project"
-import { AppProject } from "@/components/app-project"
+import { AppProject } from "@/components/memoir-project"
 import { InternshipProject } from "@/components/internship-project"
 import { MakersProjects } from "@/components/makers-projects"
 import {
