@@ -60,6 +60,8 @@ export const neuralProbeProject: NeuralProbeProject = {
   funding2: 'USC Provost\'s Undergraduate Research Fellowship',
   curveLink: 'https://viterbiundergrad.usc.edu/research/curve/',
   provostLink: 'https://academicprograms.usc.edu/services/undergraduate-research-and-experiential-learning/usc-provosts-undergraduate-research-fellowships/',
+  posterLink: '/neuralprobe/SymposiumPoster.pdf',
+  posterThumbnail: '/neuralprobe/SymposiumPoster.png',
   description: [
     'Since July 2024, I\'ve been helping to design, fabricate, and characterize a hybrid silicon-polymer neural recording probe.',
     'This neural probe aims to combine the flexibility of polymer-based neural interfaces and the high electrode density of silicon-based neural interfaces. This hybrid approach enforces high spatial resolution neural recordings while maintaining flexible mechanical properties and biocompatibility required for neural implants. To create this novel neural probe, I am assisting in developing and testing the fabrication procedure for the flexible shank.', 

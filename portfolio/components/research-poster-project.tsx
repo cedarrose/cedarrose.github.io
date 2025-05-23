@@ -46,7 +46,7 @@ export function AFEProject({ project }: AFEProjectProps) { // export name correc
               rel="noopener noreferrer"
               className="w-full"
             >
-              <div className="relative aspect-[16/9] w-full mb-4">
+              <div className="relative aspect-[16/12] w-full mb-4">
                 <Image
                   src={project.posterThumbnail}
                   alt="Poster thumbnail"

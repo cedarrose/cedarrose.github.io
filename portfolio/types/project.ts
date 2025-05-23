@@ -55,6 +55,8 @@ export interface NeuralProbeProject extends BaseProject {
   provostLink: string
   funding1: string
   funding2: string
+  posterLink?: string
+  posterThumbnail?: string
   skills: Array<{
     title: string
     content: string

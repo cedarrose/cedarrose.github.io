@@ -61,28 +61,6 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
                 <div className="text-left">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#cc5200] group-data-[state=open]:to-[#e68a00] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
-                    {researchPaperProject.title}
-                  </h2>
-                  <span className="block font-normal text-gray-600">
-                    {researchPaperProject.subtitle && (
-                      <span className="block">{researchPaperProject.subtitle}</span>
-                    )}
-                    <span className="block">{researchPaperProject.location}</span>
-                  </span>
-                </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{researchPaperProject.dateRange}</span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-4">
-              <ResearchPaperProject project={researchPaperProject} />
-            </AccordionContent>
-          </AccordionItem>
-          
-          <AccordionItem value="item-2">
-            <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
-              <div className="flex justify-between items-start w-full">
-                <div className="text-left">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {neuralProbeProject.title}
                   </h2>
@@ -103,6 +81,25 @@ export default function Page() {
             </AccordionTrigger>
             <AccordionContent className="px-4">
               <NeuralProbeProject project={neuralProbeProject} />
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
+              <div className="flex justify-between items-start w-full">
+                <div className="text-left">
+                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                    {researchPaperProject.title}
+                  </h2>
+                  <span className="block font-normal text-gray-600">
+                    {researchPaperProject.location}
+                  </span>
+                </div>
+                <span className="font-normal text-gray-500 ml-4 text-right">{researchPaperProject.dateRange}</span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4">
+              <ResearchPaperProject project={researchPaperProject} />
             </AccordionContent>
           </AccordionItem>
 
