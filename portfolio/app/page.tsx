@@ -70,7 +70,7 @@ export default function Page() {
                     )}
                     <span className="block">
                       at the{' '}
-                      <Link href="https://biomems.usc.edu/" className="italic underline hover:text-blue-600" target="_blank" rel="noopener noreferrer"> 
+                      <Link href="https://biomems.usc.edu/" className="italic underline hover:underline" target="_blank" rel="noopener noreferrer"> 
                         Biomedical Microsystems Laboratory
                       </Link>
                     </span>
@@ -116,7 +116,7 @@ export default function Page() {
                     )}
                     <span className="block">
                       at the{' '}
-                      <Link href="https://nanofab.usc.edu/" className="italic underline hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://nanofab.usc.edu/" className="italic underline hover:underline" target="_blank" rel="noopener noreferrer">
                         {nanofabProject.location}
                       </Link>
                     </span>
