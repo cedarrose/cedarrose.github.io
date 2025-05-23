@@ -58,6 +58,11 @@ export interface NeuralProbeProject extends BaseProject {
   skills: Array<{
     title: string
     content: string
+    fullWidth?: boolean
+    images?: Array<{
+      src: string
+      caption: string
+    }>
   }>
 }
 

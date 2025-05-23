@@ -98,7 +98,22 @@ export const neuralProbeProject: NeuralProbeProject = {
     },
     {
       title: "Analog-to-Digital Converter (ADC)",
-      content: "Currently researching/selecting ADC evaluation boards as to digitize probe data. Focusing on specifications such as sampling rate & bit resolution."
+      content: "Researched and selected ADC eval boards as to digitize probe data. Focused on specifications such as sampling rate & bit resolution."
+    },
+    {
+      title: "PCB Design",
+      content: "Designed two custom PCBs. The latest is a testing tool for evaluating inductive coupling efficiency of the neural probe\’s primary coil. I configured dual RF amplifiers to measure voltage differentials across the ports and calculated trace widths for impedance matching. The second board just adapts a ZIF connector to Molex pins, but I made it 10x cooler with cute seal saying hi.",
+      fullWidth: true,
+      images: [
+        {
+          src: "/neuralprobe/coilPCB.png",
+          caption: "PCB with secondary coil for testing inductive coupling efficiency of primary coil"
+        },
+        {
+          src: "/neuralprobe/zifPCB.jpeg",
+          caption: "ZIF connector"
+        }
+      ]
     }
   ]
 }
