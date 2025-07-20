@@ -39,24 +39,24 @@ export function Carousel({ images }: CarouselProps) {
           />
         </div>
       </div>
-      <div className="absolute inset-x-0 top-0 bottom-8 flex items-center justify-between p-4">
-  <Button
-    variant="outline"
-    size="icon"
-    className="h-8 w-8 rounded-full bg-white/80"
-    onClick={previous}
-  >
-    <ChevronLeft className="h-4 w-4" />
-  </Button>
-  <Button
-    variant="outline"
-    size="icon"
-    className="h-8 w-8 rounded-full bg-white/80"
-    onClick={next}
-  >
-    <ChevronRight className="h-4 w-4" />
-  </Button>
-</div>
+      <div className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2">
+        <Button
+          variant="outline"
+          size="icon"
+          className="h-8 w-8 rounded-full bg-white/80"
+          onClick={previous}
+        >
+          <ChevronLeft className="h-4 w-4" />
+        </Button>
+        <Button
+          variant="outline"
+          size="icon"
+          className="h-8 w-8 rounded-full bg-white/80"
+          onClick={next}
+        >
+          <ChevronRight className="h-4 w-4" />
+        </Button>
+      </div>
       <div className="absolute bottom-4 left-0 right-0">
         <div className="flex justify-center gap-2">
           {images.map((_, index) => (

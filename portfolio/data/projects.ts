@@ -108,7 +108,7 @@ export const neuralProbeProject: NeuralProbeProject = {
       fullWidth: true,
       images: [
         {
-          src: "/neuralprobe/coilPCB.png",
+          src: "/neuralprobe/pcb1.png",
           caption: "PCB with secondary coil for testing inductive coupling efficiency of primary coil"
         },
         {
@@ -180,7 +180,7 @@ export const elecAFEProject: AFEProject = {
   images: [
     {
       src: '/afe/breadboard.jpeg',
-      caption: 'A very messy view of testing our extended-gate transistor'
+      caption: 'Testing our extended-gate transistor'
     },
     {
       src: '/afe/transistor.jpeg',

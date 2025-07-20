@@ -31,6 +31,18 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
             </span>
         </p>
     </div>
+    <div className="mt-8 mb-8 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-purple-100">
+      <h3 className="text-lg font-semibold text-purple-800 mb-2">⭐️ Accepted Abstract ⭐️</h3>
+      <p className="text-gray-700">
+        Coauthor of accepted scientific abstract for Neural Interfaces 2025 Conference:
+      </p>
+      <p className="mt-2 text-gray-600">
+      "Implantable Flexible GHz Waveguide for High Data Throughput Neural Recording Interfaces."
+      </p>
+      <p className="text-gray-600 italic">
+        Barrera, N.D., Nguyen, T.D., Ramirez, E., Leach, C.R., Abbasi, N., Molisch, A., Sideris, C., & Meng, E.
+      </p>
+    </div>
 
     {project.posterLink && project.posterThumbnail && (
       <div className="flex justify-center mb-6">
@@ -65,24 +77,39 @@ export function NeuralProbeProject({ project }: NeuralProbeProjectProps) {
         ))}
     </div>
 
-    <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-1">
-      {project.skills.map((skill, index) => (
-        <AccordionSection key={index} {...skill} />
-      ))}
+    <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-3">
+      {project.skills.map((skill, index) => {
+        if (skill.title === 'PCB Design') {
+          return (
+            <div
+              key={index}
+              className={`w-full ${skill.fullWidth ? 'md:col-span-2' : ''} p-0`}
+            >
+              <h4 className="text-l font-medium text-center mb-2">{skill.title}</h4>
+              <p className="mb-4 whitespace-pre-line">{skill.content}</p>
+              {skill.images && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                  {skill.images.map((image, imgIdx) => (
+                    <div key={imgIdx} className="relative aspect-video">
+                      <Image
+                        src={image.src}
+                        alt={image.caption}
+                        fill
+                        className="object-cover rounded-lg"
+                      />
+                      <p className="text-sm text-gray-600 mt-2">{image.caption}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        }
+        return <AccordionSection key={index} {...skill} />;
+      })}
     </div>
 
-    <div className="mt-12 p-4 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg border border-purple-100">
-      <h3 className="text-lg font-semibold text-purple-800 mb-2">⭐️ Accepted Abstract ⭐️</h3>
-      <p className="text-gray-700">
-        Coauthor of accepted scientific abstract for Neural Interfaces 2025 Conference:
-      </p>
-      <p className="mt-2 text-gray-600">
-       "Implantable Flexible GHz Waveguide for High Data Throughput Neural Recording Interfaces."
-      </p>
-      <p className="text-gray-600 italic">
-        Barrera, N.D., Nguyen, T.D., Ramirez, E., Leach, C.R., Abbasi, N., Molisch, A., Sideris, C., & Meng, E.
-      </p>
-    </div>
+    
     
     </ProjectSection>
   )

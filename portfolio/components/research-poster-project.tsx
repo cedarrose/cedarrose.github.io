@@ -36,7 +36,9 @@ export function AFEProject({ project }: AFEProjectProps) { // export name correc
          </div>
         <div className="grid grid-cols-6 gap-8 items-start">
           <div className="col-span-6 md:col-span-4">
-            <Carousel images={project.images} />
+            <div className="h-full min-w-[15rem] md:w-[33rem] overflow-x-auto aspect-w-8 aspect-h-16">
+              <Carousel images={project.images} />
+            </div>
           </div>
           
           <div className="col-span-6 md:col-span-2 flex flex-col items-center">

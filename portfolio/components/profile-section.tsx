@@ -31,6 +31,10 @@ export function ProfileSection() {
       </div>
       <p className="text-[#5e5e5e] text-lg mb-12">Class of 2027</p>
 
+      <p className="text-lg text-[#5e5e5e] mb-4 leading-relaxed max-w-xl">
+          Co-founder of Memoir Photos - the only accessible photo library for the visually impaired. 
+      </p>
+
       <p className="text-lg text-[#5e5e5e] mb-12 leading-relaxed max-w-xl">
           Passionate about innovation at the intersection of electrical engineering and biomedical applications. 
           Focusing on nanofabrication, neural interfaces, wearable sensors, and accessible technology.
