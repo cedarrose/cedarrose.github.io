@@ -18,7 +18,7 @@ export function ProfileSection() {
       initial={{ opacity: 0, x: 0, y: -20 }}
       animate={{ opacity: 1, x: 0, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex justify-center md:order-2 order-1 mb-2 md:mb-0"
+      className="flex justify-center md:order-2 order-1 mb-6 md:mb-0"
     >
       <Image
         src="/profile.jpeg" 
