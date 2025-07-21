@@ -10,7 +10,7 @@ export function ProfileSection() {
   return (
     <section
   id="profile"
-  className="min-h-screen relative overflow-hidden bg-dot-grid bg-[length:20px_20px]"
+  className="min-h-screen relative overflow-hidden bg-dot-grid bg-[length:20px_20px] pt-8 md:pt-0"
 >
   <div className="container mx-auto px-6 min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
     {/* Profile Image on top for mobile, side for desktop */}
@@ -33,7 +33,7 @@ export function ProfileSection() {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col items-start md:order-1 order-2"
+      className="flex flex-col items-start md:order-1 order-2 max-h-[340px] overflow-hidden md:max-h-none"
     >
       <h1 className="text-xl md:text-2xl text-[#2e2e2e] mb-4 w-full md:text-left">
         <span className="font-semibold text-3xl md:text-5xl mt-2 block">Cedar Rose Leach</span>
@@ -55,31 +55,31 @@ export function ProfileSection() {
           Focusing on nanofabrication, neural interfaces, wearable sensors, and accessible technology.
       </p>
 
-      <div className="flex flex-wrap items-center gap-6 text-[#5e5e5e] text-regular">
+      <div className="flex flex-wrap items-center gap-3 md:gap-6 text-[#5e5e5e] text-regular">
         <Link href="https://www.linkedin.com/in/cedar-rose-leach" target="_blank" rel="noopener noreferrer">
           <Button
             variant="ghost"
-            className="text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
+            className="text-xs md:text-base px-2 md:px-4 py-1 md:py-2 text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
           >
-            <Linkedin className="w-4 h-4 mr-1" />
+            <Linkedin className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             LinkedIn
           </Button>
         </Link>
         <Link href="/Leach_Cedar_Rose_Resume.pdf" target="_blank" rel="noopener noreferrer">
           <Button
             variant="ghost"
-            className="text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
+            className="text-xs md:text-base px-2 md:px-4 py-1 md:py-2 text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
           >
-            <FileText className="w-4 h-4 mr-1" />
+            <FileText className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             Resume
           </Button>
         </Link>
         <Link href="mailto:cdleach@usc.edu">
           <Button
             variant="ghost"
-            className="text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
+            className="text-xs md:text-base px-2 md:px-4 py-1 md:py-2 text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
           >
-            <Mail className="w-4 h-4 mr-1" />
+            <Mail className="w-3 h-3 md:w-4 md:h-4 mr-1" />
             cdleach@usc.edu
           </Button>
         </Link>
