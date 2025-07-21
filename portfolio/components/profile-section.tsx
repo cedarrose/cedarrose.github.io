@@ -18,7 +18,7 @@ export function ProfileSection() {
       initial={{ opacity: 0, x: 0, y: -20 }}
       animate={{ opacity: 1, x: 0, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex justify-center md:order-2 order-1 mb-6 md:mb-0"
+      className="flex justify-center md:order-2 order-1 mb-2 md:mb-0"
     >
       <Image
         src="/profile.jpeg" 
@@ -33,7 +33,7 @@ export function ProfileSection() {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col items-start md:order-1 order-2 max-h-[340px] overflow-hidden md:max-h-none"
+      className="flex flex-col items-start md:order-1 order-2"
     >
       <h1 className="text-xl md:text-2xl text-[#2e2e2e] mb-4 w-full md:text-left">
         <span className="font-semibold text-3xl md:text-5xl mt-2 block">Cedar Rose Leach</span>

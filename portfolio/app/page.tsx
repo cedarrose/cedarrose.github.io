@@ -60,7 +60,7 @@ export default function Page() {
           <AccordionItem value="item-1">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
-                <div className="text-left">
+                <div className="text-left w-full">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {neuralProbeProject.title}
                   </h2>
@@ -75,8 +75,9 @@ export default function Page() {
                       </Link>
                     </span>
                   </span>
+                  <span className="block md:hidden font-normal text-gray-500 mt-1">{neuralProbeProject.dateRange}</span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{neuralProbeProject.dateRange}</span>
+                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right">{neuralProbeProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
