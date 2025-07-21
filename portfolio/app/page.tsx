@@ -61,7 +61,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {neuralProbeProject.title}
                   </h2>
                   <span className="block font-normal text-gray-600">

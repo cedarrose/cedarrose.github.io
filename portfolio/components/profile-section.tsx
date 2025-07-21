@@ -91,7 +91,7 @@ export function ProfileSection() {
     onClick={() => {
       document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
     }}
-    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-transparent border-none cursor-pointer"
+    className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-transparent border-none cursor-pointer hidden md:block"
     animate={{ y: [0, 10, 0] }}
     transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
   >
