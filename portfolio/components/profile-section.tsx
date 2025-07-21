@@ -13,17 +13,32 @@ export function ProfileSection() {
   className="min-h-screen relative overflow-hidden bg-dot-grid bg-[length:20px_20px]"
 >
   <div className="container mx-auto px-6 min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-    {/* Left Side: Text and Links */}
+    {/* Profile Image on top for mobile, side for desktop */}
+    <motion.div 
+      initial={{ opacity: 0, x: 0, y: -20 }}
+      animate={{ opacity: 1, x: 0, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="flex justify-center md:order-2 order-1 mb-6 md:mb-0"
+    >
+      <Image
+        src="/profile.jpeg" 
+        alt="Cedar Rose Leach"
+        width={500}
+        height={500}
+        className="object-cover w-full max-w-xs md:max-w-full md:w-full md:h-auto"
+      />
+    </motion.div>
+    {/* Text and Links */}
     <motion.div 
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col items-start"
+      className="flex flex-col items-start md:order-1 order-2"
     >
-      <h1 className="text-2xl text-[#2e2e2e] mb-4">
-        <span className="font-semibold text-5xl mt-2">Cedar Rose Leach</span>
+      <h1 className="text-xl md:text-2xl text-[#2e2e2e] mb-4 w-full md:text-left">
+        <span className="font-semibold text-3xl md:text-5xl mt-2 block">Cedar Rose Leach</span>
       </h1>
-      <h2 className="text-2xl text-[#590e0e] mb-6">
+      <h2 className="text-lg md:text-2xl text-[#590e0e] mb-2 w-full md:text-left">
         Electrical and Computer Engineering
       </h2>
       <div className="flex items-center gap-2">
@@ -69,22 +84,6 @@ export function ProfileSection() {
           </Button>
         </Link>
       </div>
-    </motion.div>
-
-    {/* Right Side: Profile Image */}
-    <motion.div 
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      className="flex justify-center"
-    >
-      <Image
-        src="/profile.jpeg" 
-        alt="Cedar Rose Leach"
-        width={500}
-        height={500}
-        className="object-cover w-full h-auto max-w-xs md:max-w-full"
-      />
     </motion.div>
   </div>
 
