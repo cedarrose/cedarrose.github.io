@@ -250,7 +250,7 @@ export const smartenderProject: MakerProject = {
   status: 'completed',
   description: [
     'Last year, I worked with my team to create an autonomous assembly line robot that dispenses and prepares beverages depending on user input.',
-    'We modeled its movement mechanisms after 3D printer linear rails and implemented different beverage combinations with an ice-dispensing function and some really fun LEDS.'
+    'We modeled its movement mechanisms after 3D printer linear rails and implemented different beverage combinations with an ice-dispensing function and some fun LEDS.'
   ],
   images: [
     {
