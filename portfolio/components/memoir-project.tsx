@@ -15,14 +15,13 @@ export function AppProject({ project }: AppProjectProps) {
       {...project}
     >
       <div className="mt-6 grid grid-cols-6 gap-8">
-        <div className="col-span-3 md:col-span-3 flex">
-            <div className="h-full min-w-[15rem] md:w-[30rem] overflow-x-auto aspect-w-8 aspect-h-16">
+        <div className="col-span-6 md:col-span-3 flex">
+            <div className="h-full min-w-[15rem] md:w-[30rem] w-full overflow-x-auto aspect-w-8 aspect-h-16">
                 <Carousel images={project.images}/>
             </div>
         </div>
 
-
-        <div className="col-span-3 md:col-span-3 space-y-6">
+        <div className="col-span-6 md:col-span-3 space-y-6 mt-8 md:mt-0">
           <div>
             <p className="mb-4">
               Incubated at{' '}
@@ -81,7 +80,7 @@ export function AppProject({ project }: AppProjectProps) {
       <div className="mt-8 border-t border-gray-200 pt-6">
         
           <h3 className="text-xl font-medium mb-4 text-[#be5f00]">Connect With Us</h3>
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 w-full flex-wrap">
             <Link href="https://instagram.com/memoirphotos_" className="flex items-center gap-2 text-[#be5f00] hover:underline" target="_blank" rel="noopener noreferrer">
               <Instagram className="h-5 w-5" />
               <span>@memoirphotos_</span>

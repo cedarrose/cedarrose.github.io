@@ -23,9 +23,9 @@ export function AFEProject({ project }: AFEProjectProps) { // export name correc
 
         </div>
         <div>
-            <p className="text-gray-600 mb-4 text-center flex items-center justify-center gap-2">
+            <p className="text-gray-600 mb-2 mt-2 text-center flex flex-col md:flex-row items-center justify-center gap-2 md:gap-2 w-full flex-wrap">
                 <span>{project.pi}</span>
-                <span className="border-l border-gray-300 h-4"></span>
+                <span className="hidden md:inline border-l border-gray-300 h-4"></span>
                 <span>
                 Funded by{' '} 
                 <Link href={project.curveLink} className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
