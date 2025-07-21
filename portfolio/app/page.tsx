@@ -88,15 +88,16 @@ export default function Page() {
           <AccordionItem value="item-2">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
-                <div className="text-left">
+                <div className="text-left w-full">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {researchPaperProject.title}
                   </h2>
                   <span className="block font-normal text-gray-600">
                     {researchPaperProject.location}
                   </span>
+                  <span className="block md:hidden font-normal text-gray-500 mt-1">{researchPaperProject.dateRange}</span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{researchPaperProject.dateRange}</span>
+                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right">{researchPaperProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -107,7 +108,7 @@ export default function Page() {
           <AccordionItem value="item-3">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
-                <div className="text-left">
+                <div className="text-left w-full">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#e66000] group-data-[state=open]:to-[#ffc329] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {nanofabProject.title}
                   </h2>
@@ -122,8 +123,9 @@ export default function Page() {
                       </Link>
                     </span>
                   </span>
+                  <span className="block md:hidden font-normal text-gray-500 mt-1">{nanofabProject.dateRange}</span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{nanofabProject.dateRange}</span>
+                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right">{nanofabProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -134,7 +136,7 @@ export default function Page() {
           <AccordionItem value="item-4">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
-                <div className="text-left">
+                <div className="text-left w-full">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0788a2] group-data-[state=open]:to-[#14AEBA] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {elecAFEProject.title}
                   </h2>
@@ -149,8 +151,9 @@ export default function Page() {
                       </Link>
                     </span>
                   </span>
+                  <span className="block md:hidden font-normal text-gray-500 mt-1">{elecAFEProject.dateRange}</span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{elecAFEProject.dateRange}</span>
+                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right">{elecAFEProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -161,7 +164,7 @@ export default function Page() {
           <AccordionItem value="item-5">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
-                <div className="text-left">
+                <div className="text-left w-full">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#d46a00] group-data-[state=open]:to-[#f0a500] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {memoirProject.title}
                   </h2>
@@ -171,8 +174,9 @@ export default function Page() {
                     )}
                     <span className="block">{memoirProject.location}</span>
                   </span>
+                  <span className="block md:hidden font-normal text-gray-500 mt-1">{memoirProject.dateRange}</span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{memoirProject.dateRange}</span>
+                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right">{memoirProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -183,7 +187,7 @@ export default function Page() {
           <AccordionItem value="item-6">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full">
-                <div className="text-left">
+                <div className="text-left w-full">
                   <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0066CC] group-data-[state=open]:to-[#1E90FF] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {boeingInternship.title}
                   </h2>
@@ -193,8 +197,9 @@ export default function Page() {
                     )}
                     <span className="block">{boeingInternship.location}</span>
                   </span>
+                  <span className="block md:hidden font-normal text-gray-500 mt-1">{boeingInternship.dateRange}</span>
                 </div>
-                <span className="font-normal text-gray-500 ml-4 text-right">{boeingInternship.dateRange}</span>
+                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right">{boeingInternship.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
