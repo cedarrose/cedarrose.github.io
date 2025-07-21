@@ -89,7 +89,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#007d92] group-data-[state=open]:to-[#00a1b3] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {researchPaperProject.title}
                   </h2>
                   <span className="block font-normal text-gray-600">
@@ -109,7 +109,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#e66000] group-data-[state=open]:to-[#ffc329] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#e66000] group-data-[state=open]:to-[#ffc329] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {nanofabProject.title}
                   </h2>
                   <span className="block font-normal text-gray-600">
@@ -137,7 +137,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0788a2] group-data-[state=open]:to-[#14AEBA] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0788a2] group-data-[state=open]:to-[#14AEBA] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {elecAFEProject.title}
                   </h2>
                   <span className="block font-normal text-gray-600">
@@ -165,7 +165,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#d46a00] group-data-[state=open]:to-[#f0a500] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#d46a00] group-data-[state=open]:to-[#f0a500] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {memoirProject.title}
                   </h2>
                   <span className="block font-normal text-gray-600">
@@ -188,7 +188,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0066CC] group-data-[state=open]:to-[#1E90FF] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#0066CC] group-data-[state=open]:to-[#1E90FF] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     {boeingInternship.title}
                   </h2>
                   <span className="block font-normal text-gray-600">
@@ -211,7 +211,7 @@ export default function Page() {
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
                 <div className="text-left w-full">
-                  <h2 className="text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#b34700] group-data-[state=open]:to-[#d98a0b] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#b34700] group-data-[state=open]:to-[#d98a0b] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
                     USC Makers
                   </h2>
                   <span className="block font-normal text-gray-600">
