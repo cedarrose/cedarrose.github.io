@@ -65,15 +65,6 @@ export function ProfileSection() {
             LinkedIn
           </Button>
         </Link>
-        <Link href="/Leach_Cedar_Rose_Resume.pdf" target="_blank" rel="noopener noreferrer">
-          <Button
-            variant="ghost"
-            className="text-xs md:text-base px-2 md:px-4 py-1 md:py-2 text-[#5e5e5e] hover:text-[#2D1B69] hover:bg-[#2D1B69]/10 transition-colors"
-          >
-            <FileText className="w-3 h-3 md:w-4 md:h-4 mr-1" />
-            Resume
-          </Button>
-        </Link>
         <Link href="mailto:cdleach@usc.edu">
           <Button
             variant="ghost"
