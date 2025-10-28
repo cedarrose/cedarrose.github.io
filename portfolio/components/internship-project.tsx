@@ -30,11 +30,13 @@ export function InternshipProject({ project }: InternshipProjectProps) {
         </div>
         
       </div>
-      <div className="mt-8 border-t border-gray-200 pt-4">
-        <p>
-          While on the topic of Boeing, my friends and I entered <span style={{ color: '#0066CC', fontWeight: 600}}>Boeing’s USC Freshman Design Challenge</span> last year, where we were tasked with optimizing the cost, drag, lift, and speed of a Boeing airplane by selecting aircraft subsystem components. <span style={{ color: '#0066CC', fontWeight: 600}}>After pitching our system configuration, we ended up winning the challenge and taking home a model of the Boeing 737!</span>
-        </p>
-      </div>
+      {project.title.includes('Boeing') && (
+        <div className="mt-8 border-t border-gray-200 pt-4">
+          <p>
+            While on the topic of Boeing, my friends and I entered <span style={{ color: '#0066CC', fontWeight: 600}}>Boeing's USC Freshman Design Challenge</span> last year, where we were tasked with optimizing the cost, drag, lift, and speed of a Boeing airplane by selecting aircraft subsystem components. <span style={{ color: '#0066CC', fontWeight: 600}}>After pitching our system configuration, we ended up winning the challenge and taking home a model of the Boeing 737!</span>
+          </p>
+        </div>
+      )}
     </ProjectSection>
   )
 }

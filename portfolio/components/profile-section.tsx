@@ -44,15 +44,15 @@ export function ProfileSection() {
       <div className="flex items-center gap-2">
         <p className="text-[#5e5e5e] text-lg pt-4 mb-2">University of Southern California</p>
       </div>
-      <p className="text-[#5e5e5e] text-lg mb-12">Class of 2027</p>
-
-      <p className="text-lg text-[#5e5e5e] mb-4 leading-relaxed max-w-xl">
-          Co-founder of Memoir Photos - the only accessible photo library for the visually impaired. 
-      </p>
+      <p className="text-[#5e5e5e] text-lg mb-12">Class of 2027</p>      
 
       <p className="text-lg text-[#5e5e5e] mb-12 leading-relaxed max-w-xl">
-          Passionate about innovation at the intersection of electrical engineering and biomedical applications. 
-          Focusing on nanofabrication, neural interfaces, wearable sensors, and accessible technology.
+          Passionate about building high-performance hardware for AI, robotics, and neural systems
+          Focusing neural interfaces, wearable sensors, and intelligent robotic systems through nanofabrication and chip design.
+      </p>
+      
+      <p className="text-lg text-[#5e5e5e] mb-4 leading-relaxed max-w-xl">
+          Co-founder of Memoir Photos - the only accessible photo library for the visually impaired. 
       </p>
 
       <div className="flex flex-wrap items-center gap-3 md:gap-6 text-[#5e5e5e] text-regular">

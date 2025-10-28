@@ -60,7 +60,7 @@ export function AppProject({ project }: AppProjectProps) {
                     ⭐️
                   </div>
                   <p className="text-lg font-medium">
-                    Recipient of Loyd Grief Catalyst Micro Grant             
+                    Recipient of Lloyd Grief Catalyst Micro Grant             
                   </p>
                 </div>
               </div>

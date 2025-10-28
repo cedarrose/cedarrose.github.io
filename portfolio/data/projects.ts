@@ -54,7 +54,7 @@ export const neuralProbeProject: NeuralProbeProject = {
   title: 'Neural Probe',
   subtitle: 'Design, Fabrication, & Characterization',
   location: 'at the Biomedical Microsystems Laboratory',
-  dateRange: 'July 2024 - Present',
+  dateRange: 'July 2024 - May 2025',
   pi: 'Research under Professor Ellis Meng',
   funding1: 'CURVE Fellowship',
   funding2: 'USC Provost\'s Undergraduate Research Fellowship',
@@ -225,7 +225,7 @@ export const memoirProject: MemoirProject = {
 
 export const boeingInternship: InternshipProject = {
   type: 'internship',
-  title: 'Boeing Intern',
+  title: 'Boeing FPGA Intern',
   location: 'FPGAs, Satellites & Systems, Innovation Challenge',
   dateRange: 'June 2022 - Aug 2022',
   description: [
@@ -288,4 +288,32 @@ export const bcdProject: MakerProject = {
       caption: 'Filter raw EEG signals and convert to frequency domain'
     }
   ]
+}
+
+export const northropGrummanInternship: InternshipProject = {
+  type: 'internship',
+  title: 'Northrop Grumman Hardware Engineeering',
+  location: 'Electron Beam Lithography & Microelectronics Internship',
+  dateRange: 'June 2025 - Aug 2025',
+  description: [
+    'This summer, I had the privilege of working with the Electron Beam Lithography (EBL) Team at Northrop Grumman.',
+    'Lithography is the process of creating patterns on a semiconductor wafer using a beam of photons, or in the case where nanometer precision is required, electrons. \
+    Our team fabricates the smallest componenet of a microprocessor: the gate of a transistor. The gate is the key component that controls the flow of current through the transistor, and is typically only a few nanometers wide.',
+    'With such scale, comes the challenge of patterning the gate with high precision. Anti-charging agents are conductive polymers that you dispense onto the wafer in a spin coat + bake process. \
+    The EBL fires beams of electrons onto the wafer. If the wafer is not discharged, it too contains electrons. Electron meeting electron = repulsion => inaccurate gate patterns. \
+    These anti-charging agents work to prefent EBL drift, and therefore promote better gate alignment, and higher chip yield. \
+    For various reasons, our team wanted to replace our wafer anti-charging agent. It\'s commonly known that in manufacturing, changes to a single step in the process can have a cascading effect on the entire line. \
+    This applies to Northrop\'s foundry at an extreme magnitude, due to the nature of dealing with nanometer precision.',
+    'Therefore, I examined and validated 3 wafer anti-charging agents by running a series of experiments to ensure it was as effective as the old one. \
+    I conducted 40+ resistivity, transistor gate alignment, and spin curve experiments. \
+    I studied every enviornmental variable that could affect the results: temperature, humitidy, time, machine operation, spin speed, etc. \
+    Ultimately, I saw just how delicate the semiconductor manufacturing process is (especially EBL), and how crucial it is to be mindful of every variable in the workspace. \
+    Overall, I optimized wafer-coating procedures and evaluated exposure performance across test lots, yielding $26,000 in projected annual company savings'
+  ],
+  companyLogo: {
+    src: '/NG-logo.png',
+    alt: 'Northrop Grumman Logo',
+    width: 200,
+    height: 100
+  }
 }

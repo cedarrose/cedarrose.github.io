@@ -8,6 +8,7 @@ import { NeuralProbeProject } from "@/components/neural-probe-project"
 import { ResearchPaperProject } from "@/components/research-paper-project"
 import { AppProject } from "@/components/memoir-project"
 import { InternshipProject } from "@/components/internship-project"
+import { NorthropInternshipProject } from "@/components/northrop-internship-project"
 import { MakersProjects } from "@/components/makers-projects"
 import {
   Accordion,
@@ -21,6 +22,7 @@ import {
   researchPaperProject,
   memoirProject,
   boeingInternship,
+  northropGrummanInternship,
   smartenderProject,
   bcdProject,
   elecAFEProject
@@ -57,6 +59,25 @@ export default function Page() {
         </h2>
         <div className="border-t border-gray-200 py-4 mb-6 mt-2"></div>
         <Accordion type="multiple" className="w-full [&>*]:mt-0">
+        <AccordionItem value="item-0">
+            <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
+              <div className="flex justify-between items-start w-full flex-nowrap">
+                <div className="text-left w-full">
+                  <h2 className="text-xl md:text-2xl font-semibold text-[#4A332F] transition-colors duration-200 group-data-[state=open]:bg-gradient-to-r group-data-[state=open]:from-[#2D5016] group-data-[state=open]:to-[#4A7C2A] group-data-[state=open]:bg-clip-text group-data-[state=open]:text-transparent">
+                    {northropGrummanInternship.title}
+                  </h2>
+                  <span className="block font-normal text-gray-600">
+                    {northropGrummanInternship.location}
+                  </span>
+                </div>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{northropGrummanInternship.dateRange}</span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="px-4">
+              <NorthropInternshipProject project={northropGrummanInternship} />
+            </AccordionContent>
+          </AccordionItem>
+
           <AccordionItem value="item-1">
             <AccordionTrigger className="w-full hover:bg-gray-50 transition-colors duration-200 rounded-lg p-4 group">
               <div className="flex justify-between items-start w-full flex-nowrap">
@@ -75,9 +96,8 @@ export default function Page() {
                       </Link>
                     </span>
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">{neuralProbeProject.dateRange}</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{neuralProbeProject.dateRange}</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{neuralProbeProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -95,9 +115,8 @@ export default function Page() {
                   <span className="block font-normal text-gray-600">
                     {researchPaperProject.location}
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">{researchPaperProject.dateRange}</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{researchPaperProject.dateRange}</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{researchPaperProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -123,9 +142,8 @@ export default function Page() {
                       </Link>
                     </span>
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">{nanofabProject.dateRange}</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{nanofabProject.dateRange}</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{nanofabProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -151,9 +169,8 @@ export default function Page() {
                       </Link>
                     </span>
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">{elecAFEProject.dateRange}</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{elecAFEProject.dateRange}</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{elecAFEProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -174,9 +191,8 @@ export default function Page() {
                     )}
                     <span className="block">{memoirProject.location}</span>
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">{memoirProject.dateRange}</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{memoirProject.dateRange}</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{memoirProject.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -197,9 +213,8 @@ export default function Page() {
                     )}
                     <span className="block">{boeingInternship.location}</span>
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">{boeingInternship.dateRange}</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{boeingInternship.dateRange}</span>
+x1                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{boeingInternship.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
@@ -221,9 +236,8 @@ export default function Page() {
                     </Link>
                     </span>
                   </span>
-                  <span className="block md:hidden font-normal text-gray-500 mt-1">Sept 2023 - Present</span>
                 </div>
-                <span className="hidden md:inline font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">Sept 2023 - Present</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">Sept 2023 - Present</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
