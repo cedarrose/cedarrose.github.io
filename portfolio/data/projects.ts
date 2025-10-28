@@ -304,7 +304,7 @@ export const northropGrummanInternship: InternshipProject = {
     These anti-charging agents work to prefent EBL drift, and therefore promote better gate alignment, and higher chip yield. \
     For various reasons, our team wanted to replace our wafer anti-charging agent. It\'s commonly known that in manufacturing, changes to a single step in the process can have a cascading effect on the entire line. \
     This applies to Northrop\'s foundry at an extreme magnitude, due to the nature of dealing with nanometer precision.',
-    'Therefore, I examined and validated 3 wafer anti-charging agents by running a series of experiments to ensure it was as effective as the old one. \
+    'I examined and validated 3 wafer anti-charging agents by running a series of experiments to ensure it was as effective as the old one. \
     I conducted 40+ resistivity, transistor gate alignment, and spin curve experiments. \
     I studied every enviornmental variable that could affect the results: temperature, humitidy, time, machine operation, spin speed, etc. \
     Ultimately, I saw just how delicate the semiconductor manufacturing process is (especially EBL), and how crucial it is to be mindful of every variable in the workspace. \

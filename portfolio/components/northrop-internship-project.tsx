@@ -33,12 +33,13 @@ export function NorthropInternshipProject({ project }: NorthropInternshipProject
         </div>
       </div>
       
-      {/* Clear float and add footer note */}
+      {/* Clear float and add footer note 
       <div className="clear-both mt-8 border-t border-gray-200 pt-4">
         <p>
           I wish I could share more of the journey behind this project, but due to its proprietary nature, it'll have to stay under wraps :)
         </p>
-      </div>
+      </div> */}
     </ProjectSection>
+    
   )
 }
