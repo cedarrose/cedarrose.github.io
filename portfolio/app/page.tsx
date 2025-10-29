@@ -214,7 +214,7 @@ export default function Page() {
                     <span className="block">{boeingInternship.location}</span>
                   </span>
                 </div>
-x1                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{boeingInternship.dateRange}</span>
+                <span className="font-normal text-gray-500 ml-4 text-right whitespace-nowrap min-w-[120px]">{boeingInternship.dateRange}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-4">
