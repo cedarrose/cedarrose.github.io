@@ -47,8 +47,8 @@ export function ProfileSection() {
       <p className="text-[#5e5e5e] text-lg mb-12">Class of 2027</p>      
 
       <p className="text-lg text-[#5e5e5e] mb-12 leading-relaxed max-w-xl">
-          Passionate about building high-performance hardware for AI, robotics, and neural systems
-          Focusing neural interfaces, wearable sensors, and intelligent robotic systems through nanofabrication and chip design.
+          Passionate about building high-performance hardware for AI, robotics, and neural systems. 
+          Focusing on neural interfaces, wearable sensors, and intelligent robotic systems through fabrication and chip design.
       </p>
       
       <p className="text-lg text-[#5e5e5e] mb-4 leading-relaxed max-w-xl">
